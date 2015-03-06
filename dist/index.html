@@ -1,0 +1,75 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Recruitment Ipsum</title>
+        <meta name="description" content="Recruitment Ipsum is a real collection of recruitment mails. They are finally getting usefull as placeholder text!">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="styles/main.css">
+    </head>
+    <body>
+        <!--[if lt IE 10]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <header>
+            <section>
+                <div class="grid">
+                    <div class="row">
+                        <div class="col-large-9">
+                            <div class="content">
+                                <h1>Recruitment Ipsum</h1>
+                                <h2>Recruitment Ipsum is a real collection of recruitment mails. They are finally getting usefull as placeholder text!</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+
+        <section>
+            <form name="recruitmentForm"> 
+                <div>
+                    <label for="amount">Amount</label>
+                    <input type="type" name="amount" id="amount" value="5">
+                </div>
+                <div>
+                    <label for="paragraphs">Paragraphs</label>
+                    <input type="radio" name="type" class="type" id="paragraphs" value="paragraphs" checked>
+                </div>
+                <div>
+                    <label for="paragraphs">Lists</label>
+                    <input type="radio" name="type" class="type" value="lists" id="lists">
+                </div>
+                <div>
+                    <button type="button" onclick="getRecruitmentIpsum();">Generate Recruitment Ipsum</button>
+                </button>
+            </form>
+        </section>
+
+        <section id="output">
+
+        </section>
+    
+        <footer>
+            <section>
+                <i class="fa fa-github"></i> <a href="https://github.com/jeroenoomsNL/the-flex-grid" title="The Flex Grid, CSS grid based on flexbox by Jeroen Ooms">The Flex Grid</a> by <i class="fa fa-twitter"></i> <a href="https://www.twitter.com/jeroenooms" title="Jeroen Ooms at Twitter">Jeroen Ooms</a>.
+            </section>
+        </footer>
+
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-60080969-1','auto');ga('send','pageview');
+        </script>
+
+        <script src="scripts/app.js"></script>
+    </body>
+</html>
