@@ -9,9 +9,21 @@
         <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
+        <meta property="og:title" content="Recruitment Ipsum">
+        <meta property="og:description" content="Recruitment Ipsum is a real collection of recruitment mails. They're finally getting usefull as placeholder text!">
+        <meta property="og:image" content="http://jeroenoomsnl.github.io/recruitment-ipsum/images/screenshot.png">
+
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@recruitmntipsum">
+        <meta name="twitter:creator" content="@jeroenooms">
+        <meta name="twitter:url" content="http://jeroenoomsnl.github.io/recruitment-ipsum/">
+        <meta name="twitter:title" content="Recruitment Ipsum">
+        <meta name="twitter:description" content="Recruitment Ipsum is a real collection of recruitment mails. They're finally getting usefull as placeholder text!">
+        <meta name="twitter:image" content="http://jeroenoomsnl.github.io/recruitment-ipsum/images/screenshot.png">
+
         <link rel="stylesheet" href="styles/main.css">
     </head>
-    <body>
+    <body onload="getRecruitmentIpsum()">
         <!--[if lt IE 10]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -23,7 +35,7 @@
                         <div class="col-large-9">
                             <div class="content">
                                 <h1>Recruitment Ipsum</h1>
-                                <h2>Recruitment Ipsum is a real collection of recruitment mails. They are finally getting usefull as placeholder text!</h2>
+                                <h2>Recruitment Ipsum is a real collection of recruitment mails.<br>They're finally getting usefull as placeholder text!</h2>
                             </div>
                         </div>
                     </div>
@@ -31,33 +43,33 @@
             </section>
         </header>
 
-        <section>
+        <section class="form-container">
             <form name="recruitmentForm"> 
-                <div>
+                <div class="form-block">
                     <label for="amount">Amount</label>
-                    <input type="type" name="amount" id="amount" value="5">
+                    <input type="type" name="amount" id="amount" class="amount-input" value="5" maxlength="3"><br>
                 </div>
-                <div>
-                    <label for="paragraphs">Paragraphs</label>
+                <div class="form-block">
                     <input type="radio" name="type" class="type" id="paragraphs" value="paragraphs" checked>
-                </div>
-                <div>
-                    <label for="paragraphs">Lists</label>
+                    <label for="paragraphs">Paragraphs</label><br>
                     <input type="radio" name="type" class="type" value="lists" id="lists">
+                    <label for="paragraphs">Lists</label><br>
+                    <input type="checkbox" name="start" value="start" id="start" checked>
+                    <label for="paragraphs">Start with "Recruitment Ipsum"</label>
                 </div>
-                <div>
+                <div class="form-block">
                     <button type="button" onclick="getRecruitmentIpsum();">Generate Recruitment Ipsum</button>
-                </button>
+                </div>
             </form>
         </section>
 
-        <section id="output">
-
+        <section id="output" class="output-container">
+            
         </section>
     
         <footer>
             <section>
-                <i class="fa fa-github"></i> <a href="https://github.com/jeroenoomsNL/the-flex-grid" title="The Flex Grid, CSS grid based on flexbox by Jeroen Ooms">The Flex Grid</a> by <i class="fa fa-twitter"></i> <a href="https://www.twitter.com/jeroenooms" title="Jeroen Ooms at Twitter">Jeroen Ooms</a>.
+                <i class="fa fa-github"></i> <a href="https://github.com/jeroenoomsNL/recruitment-ipsum" title="Recruitment Ipsum">Recruitment Ipsum</a> by <i class="fa fa-twitter"></i> <a href="https://www.twitter.com/jeroenooms" title="Jeroen Ooms at Twitter">Jeroen Ooms</a>.
             </section>
         </footer>
 

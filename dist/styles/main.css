@@ -513,7 +513,7 @@ header {
 }
 
 .header-button {
-  background: #2c3e50;
+  background: #0d5d4d;
   border-radius: 0.3em;
   color: #ffffff;
   display: inline-block;
@@ -542,7 +542,7 @@ section {
 }
 
 footer {
-  background: #2c3e50;
+  background: #0d5d4d;
   color: #f1f1f1;
   padding: 2em 0;
 }
@@ -571,6 +571,28 @@ footer a {
   line-height: 1.5em;
   padding: 1em;
   text-align: left;
+}
+
+.form-container {
+  padding: 2em 0;
+}
+
+.form-block {
+  display: inline-block;
+  vertical-align: middle;
+  width: 33%;
+}
+
+.amount-input {
+  border: 1px solid #666;
+  padding: 0.4em;
+  text-align: center;
+  margin-left: 0.5em;
+  width: 3em;
+}
+
+.output-container {
+  min-height: 400px;
 }
 
 /* ==========================================================================

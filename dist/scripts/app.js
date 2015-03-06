@@ -3,6 +3,8 @@
  * Bullshit bingo!
  */
 var recruitmentIpsum = {
+	"startSentence": "Recruitment ipsum first of all I want to apologise for contacting you randomly out of the blue.",
+	"startListitem": "Recruitment ipsum first of all I want to apologise",
 	"sentences": [
 		"First of all I want to apologise for contacting you randomly out of the blue.",
 		"Hopefully I can differentiate myself from the rest and hopefully you can see why I made the effort to contact you.",
@@ -68,7 +70,7 @@ Array.prototype.randomElement = function () {
     return this[Math.floor(Math.random() * this.length)]
 }
 
-var getParagraph = function( amount ) {
+var getParagraph = function( amount, start ) {
 	var i, j, n, paragraphs = "";
 
 	// build all paragraphs
@@ -78,7 +80,11 @@ var getParagraph = function( amount ) {
 
 		// build single paragraph
 		for( j=0; j<n; j++ ) {
-			paragraphs += recruitmentIpsum.sentences.randomElement()+"&nbsp;";
+			if( i === 0 && j === 0 && start ) {
+				paragraphs += recruitmentIpsum.startSentence+"&nbsp;";
+			}  else {
+				paragraphs += recruitmentIpsum.sentences.randomElement()+"&nbsp;";
+			}
 		}
 		paragraphs += "</p>";
 	}
@@ -86,7 +92,7 @@ var getParagraph = function( amount ) {
 	return paragraphs;
 }
 
-var getList = function( amount ) {
+var getList = function( amount, start ) {
 	var i, j, n, lists = "";
 
 	// build all lists
@@ -96,7 +102,11 @@ var getList = function( amount ) {
 
 		// build single list
 		for( j=0; j<n; j++ ) {
-			lists += "<li>"+recruitmentIpsum.listitems.randomElement()+"</li>";
+			if( i === 0 && j === 0 && start ) {
+				lists += "<li>"+recruitmentIpsum.startListitem+"</li>";
+			}  else {
+				lists += "<li>"+recruitmentIpsum.listitems.randomElement()+"</li>";
+			}
 		}
 		lists += "</ul>";
 	}
@@ -106,15 +116,16 @@ var getList = function( amount ) {
 }
 
 var getRecruitmentIpsum = function() {
-	var amount, type, output;
+	var amount, type, output, start = false;
 
 	amount = document.querySelector("#amount").value;
 	type = document.querySelector(".type:checked").value;
+	start = document.querySelector("#start:checked");
 
 	if( type === 'paragraphs' ) {
-		output = getParagraph( amount);
+		output = getParagraph( amount, start);
 	} else if( type === 'lists' ) {
-		output = getList( amount);
+		output = getList( amount, start);
 	}
 
 	// output
