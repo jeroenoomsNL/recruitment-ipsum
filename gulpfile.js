@@ -26,12 +26,12 @@ gulp.task('html', ['styles'], function () {
         .pipe(cssFilter.restore())
         .pipe($.useref.restore())
         .pipe($.useref())
-        .pipe(gulp.dest('demo'))
+        .pipe(gulp.dest('dist'))
         .pipe($.size());
 });
 
 gulp.task('clean', function () {
-    return gulp.src(['.tmp', 'demo'], { read: false }).pipe($.clean());
+    return gulp.src(['.tmp', 'dist'], { read: false }).pipe($.clean());
 });
 
 gulp.task('build', ['html']);
