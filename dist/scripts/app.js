@@ -67,11 +67,18 @@ var recruitmentIpsum = {
  * The Magic!
  */
 Array.prototype.randomElement = function () {
-    return this[Math.floor(Math.random() * this.length)]
+	var index = Math.floor(Math.random() * this.length);
+	var string = this[index];
+	this.splice(index, 1);
+
+    return string;
 }
 
 var getParagraph = function( amount, start ) {
-	var i, j, n, paragraphs = "";
+	var i, j, n, sentences, paragraphs = "";
+
+	// copy array
+	sentences = recruitmentIpsum.sentences.slice();
 
 	// build all paragraphs
 	for( i=0; i<amount; i++ ) {
@@ -83,7 +90,11 @@ var getParagraph = function( amount, start ) {
 			if( i === 0 && j === 0 && start ) {
 				paragraphs += recruitmentIpsum.startSentence+"&nbsp;";
 			}  else {
-				paragraphs += recruitmentIpsum.sentences.randomElement()+"&nbsp;";
+				// re-copy array if it's empty
+				if( sentences.length === 0 ) {
+					sentences = recruitmentIpsum.sentences.slice();
+				}
+				paragraphs += sentences.randomElement()+"&nbsp;";
 			}
 		}
 		paragraphs += "</p>";
@@ -93,7 +104,10 @@ var getParagraph = function( amount, start ) {
 }
 
 var getList = function( amount, start ) {
-	var i, j, n, lists = "";
+	var i, j, n, listitems, lists = "";
+
+	// copy array
+	listitems = recruitmentIpsum.listitems.slice();
 
 	// build all lists
 	for( i=0; i<amount; i++ ) {
@@ -105,7 +119,11 @@ var getList = function( amount, start ) {
 			if( i === 0 && j === 0 && start ) {
 				lists += "<li>"+recruitmentIpsum.startListitem+"</li>";
 			}  else {
-				lists += "<li>"+recruitmentIpsum.listitems.randomElement()+"</li>";
+				// re-copy array if it's empty
+				if( listitems.length === 0 ) {
+					listitems = recruitmentIpsum.listitems.slice();
+				}
+				lists += "<li>"+listitems.randomElement()+"</li>";
 			}
 		}
 		lists += "</ul>";
