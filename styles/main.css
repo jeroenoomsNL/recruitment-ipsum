@@ -497,6 +497,7 @@ h1, h2 {
 h1 {
   font-size: 3em;
   margin-bottom: 0.2em;
+  line-height: 1.2;
 }
 
 h2 {
