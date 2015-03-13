@@ -76,6 +76,8 @@ gulp.task('watch', ['connect', 'serve'], function () {
     gulp.watch([
         'app/*.html',
         '.tmp/styles/**/*.css',
+        'app/scripts/**/*.js',
+        'app/images/**/*'
     ]).on('change', function (file) {
         server.changed(file.path);
     });
