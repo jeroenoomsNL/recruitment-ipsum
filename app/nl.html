@@ -23,7 +23,9 @@
         <meta name="twitter:description" content="Recruitment Ipsum is a real collection of recruitment mails. They're finally getting usefull as placeholder text!">
         <meta name="twitter:image" content="http://recruitmentipsum.com/images/screenshot.png">
 
-        <link rel="stylesheet" href="styles/main.css">
+        <!-- build:css styles/main.css -->
+        <link rel="stylesheet" href="styles/app.css">
+        <!-- endbuild -->
     </head>
     <body onload="getRecruitmentIpsum()">
         <!--[if lt IE 10]>
@@ -34,28 +36,28 @@
             <section>
                 <div class="header-content">
                     <h1>Recruitment Ipsum</h1>
-                    <h2>Recruitment Ipsum is a collection of real recruitment mails.<br>They're finally getting usefull as placeholder text!</h2>
+                    <h2>Recruitment Ipsum is een verzameling van echte recruitment mails.<br>Ze doen het ook prima als placeholder tekst!</h2>
                 </div>
             </section>
         </header>
 
         <section class="form-container">
             <form name="recruitmentForm"> 
-                <input id="language" name="language" value="en">
+                <input id="language" name="language" value="nl" class="hidden">
                 <div class="form-block">
                     <input type="radio" name="type" class="type" id="paragraphs" value="paragraphs" checked>
-                    <label for="paragraphs">Paragraphs</label><br>
+                    <label for="paragraphs">Paragrafen</label><br>
                     <input type="radio" name="type" class="type" value="lists" id="lists">
-                    <label for="lists">Lists</label><br>
+                    <label for="lists">Lijsten</label><br>
                     <input type="checkbox" name="start" value="start" id="start" checked>
-                    <label for="start">Start with "Recruitment Ipsum"</label>
+                    <label for="start">Begin met "Recruitment Ipsum"</label>
                 </div>
                 <div class="form-block">
-                    <label for="amount">Amount</label>
+                    <label for="amount">Aantal</label>
                     <input type="type" name="amount" id="amount" class="amount-input" value="5" maxlength="3"><br>
                 </div>
                 <div class="form-block">
-                    <button type="button" class="generate-button" onclick="getRecruitmentIpsum();">Generate Recruitment Ipsum</button>
+                    <button type="button" class="generate-button" onclick="getRecruitmentIpsum();">Maak Recruitment Ipsum</button>
                 </div>
             </form>
         </section>
@@ -66,7 +68,7 @@
     
         <footer>
             <section>
-                <i class="fa fa-github"></i> <a href="https://github.com/jeroenoomsNL/recruitment-ipsum" title="Recruitment Ipsum">Recruitment Ipsum</a> by <i class="fa fa-twitter"></i> <a href="https://www.twitter.com/jeroenooms" title="Jeroen Ooms at Twitter">Jeroen Ooms</a>.
+                <i class="fa fa-github"></i> <a href="https://github.com/jeroenoomsNL/recruitment-ipsum" title="Recruitment Ipsum">Recruitment Ipsum</a> door <i class="fa fa-twitter"></i> <a href="https://www.twitter.com/jeroenooms" title="Jeroen Ooms at Twitter">Jeroen Ooms</a>.
             </section>
         </footer>
 
@@ -79,6 +81,8 @@
             ga('create','UA-60080969-2','auto');ga('send','pageview');
         </script>
 
-        <script src="scripts/app.js"></script>
+        <!-- build:js scripts/app.js -->
+        <script src="scripts/recruitment-ipsum.js"></script>
+        <!-- endbuild -->
     </body>
 </html>
