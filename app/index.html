@@ -44,16 +44,16 @@
         <section class="form-container">
             <form name="recruitmentForm"> 
                 <div class="form-block">
-                    <label for="amount">Amount</label>
-                    <input type="type" name="amount" id="amount" class="amount-input" value="5" maxlength="3"><br>
-                </div>
-                <div class="form-block">
                     <input type="radio" name="type" class="type" id="paragraphs" value="paragraphs" checked>
                     <label for="paragraphs">Paragraphs</label><br>
                     <input type="radio" name="type" class="type" value="lists" id="lists">
                     <label for="lists">Lists</label><br>
                     <input type="checkbox" name="start" value="start" id="start" checked>
                     <label for="start">Start with "Recruitment Ipsum"</label>
+                </div>
+                <div class="form-block">
+                    <label for="amount">Amount</label>
+                    <input type="type" name="amount" id="amount" class="amount-input" value="5" maxlength="3"><br>
                 </div>
                 <div class="form-block">
                     <button type="button" class="generate-button" onclick="getRecruitmentIpsum();">Generate Recruitment Ipsum</button>
