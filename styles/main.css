@@ -650,20 +650,10 @@ footer a {
 }
 
 .form-block {
-  display: inline-block;
   vertical-align: middle;
   min-height: 40px;
-  margin-bottom: 1em;
-  width: 33%;
-  min-width: 300px;
-}
-
-.form-block:last-child {
-  margin: 0;
-}
-
-.button-block {
-  text-align: right;
+  margin: 1em auto 2em auto;
+  width: 300px;
 }
 
 .amount-input {
@@ -677,9 +667,6 @@ footer a {
 
 .output-container {
   background: #fff;
-  border: 1px solid #ccc;
-  border-radius: 0.5em;
-  margin-bottom: 2em;
   min-height: 100px;
   padding: 1em;
 }
@@ -695,4 +682,18 @@ footer a {
 .language-switch {
   margin: 1em 0;
   text-align: center;
+}
+
+@media only screen and (min-width: 960px) {
+  .form-block {
+    display: inline-block;
+    margin: 1em 0;
+    width: 33%;
+  }
+
+  .output-container {
+    border: 1px solid #ccc;
+    border-radius: 0.5em;
+    margin-bottom: 2em;
+  }
 }
