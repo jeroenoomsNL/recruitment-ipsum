@@ -174,8 +174,9 @@ var getParagraph = function( amount, start, language ) {
 
 		// build single paragraph, should be longer than 300 characters
 		do {
-			if( j === 0 && start ) {
+			if( i === 0 && start ) {
 				paragraph += recruitmentIpsum[language].startSentence+'&nbsp;';
+				start = false;
 			}  else {
 				// re-copy array if it's empty
 				if( sentences.length === 0 ) {
