@@ -554,6 +554,10 @@ textarea {
 /* ==========================================================================
    Recruitment Ipsum styles
    ========================================================================== */
+html, body {
+  height: 100%;
+}
+
 body {
   background: #f5f5f5;
 }
@@ -580,6 +584,17 @@ h2 {
 
 h3 {
   margin-top: 3em;
+}
+
+.page-wrap {
+  margin-bottom: -90px;
+  min-height: 100%;
+}
+
+.page-wrap:after {
+  content: "";
+  display: block;
+  height: 90px;
 }
 
 header {
@@ -618,7 +633,10 @@ section {
 
 footer {
   background: #0d5d4d;
+  bottom: 0;
+  box-sizing: border-box;
   color: #f1f1f1;
+  height: 90px;
   padding: 2em 0;
 }
 
@@ -644,12 +662,17 @@ footer a {
   margin: 0;
 }
 
+.button-block {
+  text-align: right;
+}
+
 .amount-input {
   border: 1px solid #666;
+  border-radius: 3px;
   padding: 0.4em;
   text-align: center;
   margin-left: 0.5em;
-  width: 3em;
+  width: 2em;
 }
 
 .output-container {
@@ -657,8 +680,8 @@ footer a {
   border: 1px solid #ccc;
   border-radius: 0.5em;
   margin-bottom: 2em;
-  min-height: 400px;
-  padding: 1em 2em;
+  min-height: 100px;
+  padding: 1em;
 }
 
 .generate-button {
@@ -669,6 +692,7 @@ footer a {
   padding: 1em;
 }
 
-.hidden {
-  display: none;
+.language-switch {
+  margin: 1em 0;
+  text-align: center;
 }

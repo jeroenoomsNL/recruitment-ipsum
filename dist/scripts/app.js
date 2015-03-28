@@ -1,5 +1,7 @@
 'use strict';
 
+var language;
+
 /*
  * Bullshit bingo!
  */
@@ -64,8 +66,8 @@ var recruitmentIpsum = {
 		]
 	},
 	'nl': {
-		'startSentence': 'Recruitment ipsum first of all I want to apologise for contacting you randomly out of the blue.',
-		'startListitem': 'Recruitment ipsum first of all I want to apologise',
+		'startSentence': 'Recruitment ipsum ik weet dat je me niet kent, maar zou jij misschien contact met me op kunnen nemen via onderstaand nummer?',
+		'startListitem': 'Recruitment ipsum ik weet dat je me niet kent',
 		'sentences': [
 			'Ik weet dat je me niet kent, maar zou jij misschien contact met me op kunnen nemen via onderstaand nummer?',
 			'Voor een klant van mij ben ik op zoek naar een Front-End Developer. Sta jij hier voor open?',
@@ -118,7 +120,6 @@ var recruitmentIpsum = {
 			'Bijvoorbeeld meer salaris, dichterbij huis werken, meer collega’s om mee te sparren?',
 			'Vaak zijn dat de punten namelijk willen mensen switchen van baan.',
 			'Ook wanneer je niet zoekende bent; ken je misschien wel iemand uit je netwerk die op zoek is naar een nieuwe baan?',
-			'Ons team staat nu ook echt, een fantastische sfeer en energie, allemaal goede frontend mannen.',
 			'Ik had je al eerder verteld dat de voorwaarden ook goed zijn, ik zie echt geen reden waarom je niet in ieder geval een kop koffie zou pakken met mij.',
 			'Kom toch man! Je krijgt er een spijtgarantie-certificaat bij van mij.',
 			'Mail even en geef even je mobiele nummer, dan bellen we anders ook nog even.',
@@ -133,7 +134,8 @@ var recruitmentIpsum = {
 			'Ruimte en vrijheid om je eigen ontwikkeling te sturen',
 			'Direct een contract voor onbepaalde tijd',
 			'Mogelijkheid om parttime te werken',
-			'Bovengemiddeld salaris en uitstekende secundaire arbeidsvoorwaarden',
+			'Bovengemiddeld salaris',
+			'Uitstekende secundaire arbeidsvoorwaarden',
 			'Een ruim leasebudget'
 		]
 	}
@@ -152,8 +154,15 @@ Array.prototype.randomElement = function () {
     return string;
 };
 
+var getParameterByName = function(name) {
+    name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+    var regex = new RegExp('[\\?&]' + name + '=([^&#]*)'),
+        results = regex.exec(location.search);
+    return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+};
+
 var getParagraph = function( amount, start, language ) {
-	var i, j, n, sentences, paragraph, paragraphs = '';
+	var i, j, sentences, paragraph, paragraphs = '';
 
 	// copy array
 	sentences = recruitmentIpsum[language].sentences.slice();
@@ -213,10 +222,9 @@ var getList = function( amount, start, language ) {
 };
 
 var getRecruitmentIpsum = function() {
-	var amount, language, type, output, start = false;
+	var amount, type, output, start = false;
 
 	amount = document.querySelector('#amount').value;
-	language = document.querySelector('#language').value;
 	type = document.querySelector('.type:checked').value;
 	start = document.querySelector('#start:checked');
 
@@ -229,3 +237,24 @@ var getRecruitmentIpsum = function() {
 	// output
 	document.querySelector('#output').innerHTML = output;
 };
+
+document.recruitmentForm.onsubmit = function() {
+	getRecruitmentIpsum();
+	return false;
+};
+
+
+function initialize() {
+	language = getParameterByName('language');
+	language = ['nl','en'].indexOf(language) === -1 ? 'en' : language;
+
+	var translateElements = document.querySelectorAll('[data-lang-'+language+']');
+
+	for( var i = 0; i < translateElements.length; ++i) {
+		var translation = translateElements[i].attributes['data-lang-'+language].value;
+		translateElements[i].innerHTML = translation;
+	}
+
+	getRecruitmentIpsum();
+};
+

@@ -25,48 +25,51 @@
 
         <link rel="stylesheet" href="styles/main.css">
     </head>
-    <body onload="getRecruitmentIpsum()">
+    <body onload="initialize()">
         <!--[if lt IE 10]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        <div class="page-wrap">
+            <header>
+                <section>
+                    <div class="header-content">
+                        <h1>Recruitment Ipsum</h1>
+                        <h2 data-lang-nl="Recruitment Ipsum is een verzameling van echte recruitment mails.<br>Ze doen het ook prima als placeholder tekst!" data-lang-en="Recruitment Ipsum is a collection of real recruitment mails.<br>They're finally getting usefull as placeholder text!">Recruitment Ipsum is a collection of real recruitment mails.<br>They're finally getting usefull as placeholder text!</h2>
+                    </div>
+                </section>
+            </header>
 
-        <header>
-            <section>
-                <div class="header-content">
-                    <h1>Recruitment Ipsum</h1>
-                    <h2>Recruitment Ipsum is a collection of real recruitment mails.<br>They're finally getting usefull as placeholder text!</h2>
-                </div>
+            <section class="form-container">
+                <form name="recruitmentForm"> 
+                    <input id="language" name="language" value="en" type="hidden">
+                    <div class="form-block">
+                        <input type="radio" name="type" class="type" id="paragraphs" value="paragraphs" checked>
+                        <label for="paragraphs" data-lang-nl="Paragrafen" data-lang-en="Paragraphs">Paragraphs</label><br>
+                        <input type="radio" name="type" class="type" value="lists" id="lists">
+                        <label for="lists" data-lang-nl="Lijsten" data-lang-en="Lists">Lists</label><br>
+                        <input type="checkbox" name="start" value="start" id="start" checked>
+                        <label for="start" data-lang-nl='Begin met "Recruitment Ipsum"' data-lang-en='Start with "Recruitment Ipsum"'>Start with "Recruitment Ipsum"</label>
+                    </div>
+                    <div class="form-block">
+                        <label for="amount" data-lang-nl="Aantal" data-lang-en="Amount">Amount</label>
+                        <input type="type" name="amount" id="amount" class="amount-input" value="5" maxlength="3"><br>
+                    </div>
+                    <div class="form-block button-block">
+                        <button type="button" class="generate-button" onclick="getRecruitmentIpsum();" data-lang-nl="Maak Recruitment Ipsum" data-lang-en="Generate Recruitment Ipsum">Generate Recruitment Ipsum</button>
+                    </div>
+                </form>
+
+                <p data-lang-nl='<a href="/">Probeer ook de Engelse versie!</a>' data-lang-en='<a href="?language=nl">Try the Dutch version!</a>' class="language-switch"><a href="?language=nl">Try the Dutch version!</a></p>
             </section>
-        </header>
 
-        <section class="form-container">
-            <form name="recruitmentForm"> 
-                <input id="language" name="language" value="en" type="hidden">
-                <div class="form-block">
-                    <input type="radio" name="type" class="type" id="paragraphs" value="paragraphs" checked>
-                    <label for="paragraphs">Paragraphs</label><br>
-                    <input type="radio" name="type" class="type" value="lists" id="lists">
-                    <label for="lists">Lists</label><br>
-                    <input type="checkbox" name="start" value="start" id="start" checked>
-                    <label for="start">Start with "Recruitment Ipsum"</label>
-                </div>
-                <div class="form-block">
-                    <label for="amount">Amount</label>
-                    <input type="type" name="amount" id="amount" class="amount-input" value="5" maxlength="3"><br>
-                </div>
-                <div class="form-block">
-                    <button type="button" class="generate-button" onclick="getRecruitmentIpsum();">Generate Recruitment Ipsum</button>
-                </div>
-            </form>
-        </section>
-
-        <section id="output" class="output-container">
-            
-        </section>
-    
+            <section id="output" class="output-container">
+                
+            </section>
+        </div>
+        
         <footer>
             <section>
-                <i class="fa fa-github"></i> <a href="https://github.com/jeroenoomsNL/recruitment-ipsum" title="Recruitment Ipsum">Recruitment Ipsum</a> by <i class="fa fa-twitter"></i> <a href="https://www.twitter.com/jeroenooms" title="Jeroen Ooms at Twitter">Jeroen Ooms</a>.
+                <i class="fa fa-github"></i> <a href="https://github.com/jeroenoomsNL/recruitment-ipsum" title="Recruitment Ipsum">Recruitment Ipsum</a> <span data-lang-nl="door" data-lang-en="by">by</span> <i class="fa fa-twitter"></i> <a href="https://www.twitter.com/jeroenooms" title="Jeroen Ooms at Twitter">Jeroen Ooms</a>.
             </section>
         </footer>
 
