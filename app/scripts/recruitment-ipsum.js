@@ -55,7 +55,9 @@ var recruitmentIpsum = {
 			'Playing computer games makes you happy, than you will be glad to meet the company, that is happy to make them.',
 			'So in case you are interested in some new challenging opportunities, I will send you the description of the vacancy.',
 			'After that we can discuss the details with you.',
-			'If not, I would be glad to keep in touch with you for any future interesting vacancies.'
+			'If not, I would be glad to keep in touch with you for any future interesting vacancies.',
+			'My apologies if we have contacted you but we are still looking for more Javascript developers (permanent / freelance) to complete the teams of a telecom organisation in Amsterdam and Eindhoven area.',
+			'Are you interested in the details of this position? Thank you.'
 		],
 		'listitems': [
 			'We build a variety of products from scratch',
@@ -161,7 +163,14 @@ var recruitmentIpsum = {
 			'Je hebt het ongetwijfeld druk momenteel maar ik wilde even checken of mijn voorgaande email wel goed is aangekomen?',
 			'Mocht je interesse hebben om je eigen afdeling op te gaan zetten kom ik graag met je in contact om te kijken hoe we verder hierin kunnen gaan.',
 			'Ik kwam jouw profiel net tegen. Dit ziet er goed uit!',
-			'Sta jij hier voor open?'
+			'Sta jij hier voor open?',
+			'Zou dit interessant voor je kunnen zijn?',
+			'Gezien de front-end ervaring wilde ik toch polsen in hoeverre jij openstaat voor (bij jou) passende mogelijkheden.',
+			'Het risico afgewimpeld te worden hoort erbij, maar kan het hebben.',
+			'Ik zie veel aanknopingspunten met jouw profiel en denk dat dit wellicht interessant voor jou zou kunnen zijn.',
+			'Mocht je niet geinteresseerd zijn dan hoor ik uiteraard ook graag van je.',
+			'Vorige week heb ik je onderstaand bericht gestuurd, maar hier helaas nog geen reactie op gehad.',
+			'Ken je wellicht iemand vanuit je netwerk voor wie deze positie momenteel wel interessant zou kunnen zijn?'
 		],
 		'listitems': [
 			'Je werkt samen met designers aan een grote webshop',
@@ -182,16 +191,6 @@ var recruitmentIpsum = {
 
 };
 
-
-
-
-
-
-
-  
-
-
- 
 
 
 /*
