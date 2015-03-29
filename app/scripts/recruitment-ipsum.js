@@ -48,7 +48,14 @@ var recruitmentIpsum = {
 			'You are my 1st connection, however I do not know anything about you as a person and how you picture your career path?',
 			'I really don’t care if you are currently looking for a job or not, but I would love to have a chat with you.',
 			'This is the ultimate opportunity for frontend developers in Rotterdam to become a real expert in their field.',
-			'If you are eager to be challenged developing secure platforms for a huge user spectrum, you need to read further.'
+			'If you are eager to be challenged developing secure platforms for a huge user spectrum, you need to read further.',
+			'I came across your LinkedIn profile with genuine interest and would be very keen to make contact with you to find out about your current work situation and possible career goals & aspirations.',
+			'If you are interested, I have a nice opportunity.',
+			'Our team want to meet a Front-End developer who is passionate about gaming technologies, knows his job as a professional and involved in games as crazy.',
+			'Playing computer games makes you happy, than you will be glad to meet the company, that is happy to make them.',
+			'So in case you are interested in some new challenging opportunities, I will send you the description of the vacancy.',
+			'After that we can discuss the details with you.',
+			'If not, I would be glad to keep in touch with you for any future interesting vacancies.'
 		],
 		'listitems': [
 			'We build a variety of products from scratch',
@@ -123,6 +130,38 @@ var recruitmentIpsum = {
 			'Ik had je al eerder verteld dat de voorwaarden ook goed zijn, ik zie echt geen reden waarom je niet in ieder geval een kop koffie zou pakken met mij.',
 			'Kom toch man! Je krijgt er een spijtgarantie-certificaat bij van mij.',
 			'Mail even en geef even je mobiele nummer, dan bellen we anders ook nog even.',
+			'Voor onze klant die een state-of-the art eCommerce oplossing ontwikkelt, gebruikt door haar klanten wereldwijd, zijn wij op zoek naar een Lead Frontend Engineer om onderdeel uit de maken van een multi disciplinair team.',
+			'Sta je momenteel open om eens verder te praten over een nieuwe job opportunity?',
+			'Op dit moment ontgroeit de organisatie de "start-up" fase en heeft een grote focus op operational excellence.',
+			'In deze rol help je met je technische kennis en best practices de IT organisatie te transformeren.',
+			'Je hebt visie hoe de kwaliteit te verbeteren en de time to market te verkleinen.',
+			'Je werkt in een DevOps team gebruik makend van Agile principes als continuous integration en deployment.',
+			'Als persoon ben je enthousiast, heb je passie voor techniek, deel je graag je kennis en heb je geen 9 tot 5 mentaliteit.',
+			'Ik vertel je er graag meer over.',
+			'Ik ben nieuwsgierig of dit nog bevalt, of dat je er eventueel voor open zou staan om het over mogelijkheden elders te hebben.',
+			'In deze functie ben je technisch expert en adviseur bij het optimaliseren van mobiele internetoplossingen bij toonaangevende klanten.',
+			'Gezien jouw eerdere ervaring denk ik dat deze positie goed aan zou kunnen sluiten en interessant zou kunnen zijn voor jou.',
+			'Zou je hier meer informatie over willen ontvangen?',
+			'Ik kom graag met je in contact!',
+			'Misschien dat je mijn bericht over het hoofd hebt gezien, of er nog niet aan toegekomen bent om te antwoorden.',
+			'Zou je het ook kunnen laten weten als je geen interesse hebt? Dan weet ik waar ik aan toe ben.',
+			'Je profiel op LinkedIn wekte mijn interesse vanwege je jarenlange ervaring met Javascript.',
+			'Sta je momenteel open voor een nieuwe baan?',
+			'Wellicht is in dat geval de vacature Javascript Developer interessant voor je.',
+			'Je gaat in deze functie verder werken aan een succesvolle open-source applicatie, die onze opdrachtgever in eigen beheer heeft ontwikkeld.',
+			'Je bent hierin een sparringspartner voor verschillende afdelingen (testers, architecten) waardoor je invloed op de ontwikkeling van het product groot is.',
+			'Mocht je die ambitie hebben, dan is het mogelijk om als lead developer aan de slag te gaan.',
+			'Je komt te werken bij een succesvolle organisatie in Delft.',
+			'De organisatie kenmerkt zich door een informele werksfeer en het kennisniveau binnen de organisatie is zeer hoog.',
+			'Ik hoor graag of deze functie je interesse heeft gewekt.',
+			'Mocht je vragen hebben over de functie en/of onze klant, neem dan gerust even contact op via de onderstaande contactgegevens.',
+			'Ik zie je reactie met belangstelling tegemoet.',
+			'Ik was even benieuwd of onderstaande email goed ontvangen was en of je geïnteresseerd bent in een vacature als deze.',
+			'Mocht dat zo zijn ontvang ik graag je up-to-date CV en wil ik je even telefonisch spreken of jouw wensen/ideën matchen met de vacature.',
+			'Je hebt het ongetwijfeld druk momenteel maar ik wilde even checken of mijn voorgaande email wel goed is aangekomen?',
+			'Mocht je interesse hebben om je eigen afdeling op te gaan zetten kom ik graag met je in contact om te kijken hoe we verder hierin kunnen gaan.',
+			'Ik kwam jouw profiel net tegen. Dit ziet er goed uit!',
+			'Sta jij hier voor open?'
 		],
 		'listitems': [
 			'Je werkt samen met designers aan een grote webshop',
@@ -136,11 +175,23 @@ var recruitmentIpsum = {
 			'Mogelijkheid om parttime te werken',
 			'Bovengemiddeld salaris',
 			'Uitstekende secundaire arbeidsvoorwaarden',
-			'Een ruim leasebudget'
+			'Een ruim leasebudget',
+			'Je komt te werken bij een succesvolle organisatie in Delft'
 		]
 	}
 
 };
+
+
+
+
+
+
+
+  
+
+
+ 
 
 
 /*
