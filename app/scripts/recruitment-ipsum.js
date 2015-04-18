@@ -57,7 +57,9 @@ var recruitmentIpsum = {
 			'After that we can discuss the details with you.',
 			'If not, I would be glad to keep in touch with you for any future interesting vacancies.',
 			'My apologies if we have contacted you but we are still looking for more Javascript developers (permanent / freelance) to complete the teams of a telecom organisation in Amsterdam and Eindhoven area.',
-			'Are you interested in the details of this position? Thank you.'
+			'Are you interested in the details of this position? Thank you.',
+			'Good communication skills are a must as you will be interacting with other software developers and project managers in a test driven environment.',
+			'If not, please let me know when so I can contact you at the relevant time.'
 		],
 		'listitems': [
 			'We build a variety of products from scratch',
@@ -71,7 +73,13 @@ var recruitmentIpsum = {
 			'Your career plan will be mapped out for the entire year',
 			'Own budget for conferences, books, trainings',
 			'Internal monthly meetup to share knowledge, case study presentations',
-			'Well-known speakers are flews over from the UK & US to talk give internal seminars'
+			'Well-known speakers are flews over from the UK & US to talk give internal seminars',
+			'+5 years JavaScript experience',
+			'Experience working with JS frameworks such as Angular, NodeJS, BackboneJS',
+			'HTML/CSS experience including the use of Twitter Bootstrap',
+			'TDD or BDD experience',
+			'Location: Amsterdam, Netherlands',
+			'Rate: Negotiable depending on experience'
 		]
 	},
 	'nl': {
