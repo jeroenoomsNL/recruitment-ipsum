@@ -16,9 +16,6 @@
         <meta property="og:image" content="http://recruitmentipsum.com/images/screenshot.png">
         <meta property="og:url" content="http://recruitmentipsum.com">
 
-        <meta property="fb:app_id" content="1379402255692580" />
-        <meta property="fb:admins" content="710437206"/>
-
         <meta name="twitter:card" content="summary">
         <meta name="twitter:site" content="@recruitmntipsum">
         <meta name="twitter:creator" content="@jeroenooms">
@@ -32,23 +29,6 @@
         <!-- endbuild -->
     </head>
     <body onload="initialize()">
-        <script>
-          window.fbAsyncInit = function() {
-            FB.init({
-              appId      : '1379402255692580',
-              xfbml      : true,
-              version    : 'v2.3'
-            });
-          };
-
-          (function(d, s, id){
-             var js, fjs = d.getElementsByTagName(s)[0];
-             if (d.getElementById(id)) {return;}
-             js = d.createElement(s); js.id = id;
-             js.src = "//connect.facebook.net/en_US/sdk.js";
-             fjs.parentNode.insertBefore(js, fjs);
-           }(document, 'script', 'facebook-jssdk'));
-        </script>
 
         <!--[if lt IE 10]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -92,7 +72,19 @@
             </section>
 
             <section>
-                <div class="fb-comments" data-href="http://recruitmentipsum.com" data-numposts="10"></div>
+                <div id="disqus_thread"></div>
+                <script type="text/javascript">
+                    /* * * CONFIGURATION VARIABLES * * */
+                    var disqus_shortname = 'recruitmentipsum';
+                    
+                    /* * * DON'T EDIT BELOW THIS LINE * * */
+                    (function() {
+                        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
             </section>
         </div>
         
