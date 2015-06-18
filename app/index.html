@@ -14,8 +14,10 @@
         <meta property="og:title" content="Recruitment Ipsum">
         <meta property="og:description" content="Recruitment Ipsum is a collection of real recruitment mails. They're finally getting useful as placeholder text!">
         <meta property="og:image" content="http://recruitmentipsum.com/images/screenshot.png">
+        <meta property="og:url" content="http://recruitmentipsum.com">
 
         <meta property="fb:app_id" content="1379402255692580" />
+        <meta property="fb:admins" content="710437206"/>
 
         <meta name="twitter:card" content="summary">
         <meta name="twitter:site" content="@recruitmntipsum">
@@ -30,18 +32,27 @@
         <!-- endbuild -->
     </head>
     <body onload="initialize()">
+        <script>
+          window.fbAsyncInit = function() {
+            FB.init({
+              appId      : '1379402255692580',
+              xfbml      : true,
+              version    : 'v2.3'
+            });
+          };
+
+          (function(d, s, id){
+             var js, fjs = d.getElementsByTagName(s)[0];
+             if (d.getElementById(id)) {return;}
+             js = d.createElement(s); js.id = id;
+             js.src = "//connect.facebook.net/en_US/sdk.js";
+             fjs.parentNode.insertBefore(js, fjs);
+           }(document, 'script', 'facebook-jssdk'));
+        </script>
+
         <!--[if lt IE 10]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
-        <div id="fb-root"></div>
-        <script>(function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return;
-          js = d.createElement(s); js.id = id;
-          js.src = "//connect.facebook.net/nl_NL/sdk.js#xfbml=1&version=v2.3&appId=1379402255692580";
-          fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
 
         <div class="page-wrap">
             <header>
@@ -81,7 +92,7 @@
             </section>
 
             <section>
-                <div class="fb-comments" data-href="http://recruitmentsipsum.com" data-numposts="10"></div>
+                <div class="fb-comments" data-href="http://recruitmentipsum.com" data-numposts="10"></div>
             </section>
         </div>
         

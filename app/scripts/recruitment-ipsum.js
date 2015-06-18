@@ -59,7 +59,16 @@ var recruitmentIpsum = {
 			'My apologies if we have contacted you but we are still looking for more Javascript developers (permanent / freelance) to complete the teams of a telecom organisation in Amsterdam and Eindhoven area.',
 			'Are you interested in the details of this position? Thank you.',
 			'Good communication skills are a must as you will be interacting with other software developers and project managers in a test driven environment.',
-			'If not, please let me know when so I can contact you at the relevant time.'
+			'If not, please let me know when so I can contact you at the relevant time.',
+			'I came across your profile while on the lookout for strong software engineers and was very impressed with your experience and background.',
+			'I work with some of the top Tech Start-ups and Software Houses in London and the South East and am looking to build up my network of strong developers so I\'d be keen to connect so we can keep in touch for the future.',
+			'While I appreciate that another recruitment contact/connection may be the last thing you need, I can assure you that I genuinely work on sourcing engineers for some of the largest, most distributed and technically challenging systems and applications in London and the South East.',
+			'And if you check out my LinkedIn profile and recommendations therein I hope you will appreciate that if indeed you could be interested in a new position (either now or in the future) then it may be mutually beneficial for us to have a discussion.',
+			'Now that\'s my spiel out of the way... from reading about your interests, experience and background, I do have one specific role working with a OO JavaScript and React.js to develop a SPA for a financial derivatives trading company in London.',
+			'Although in finance, it’s a relaxed work environment and they use some of the latest technologies to a TDD approach in an agile development process.',
+			'Its paying £55,000 - £70,000 + 15% Bonus and lots of other benefits.',
+			'I thought (on the face of it anyway) it looked like a good match for your profile.',
+			'As I\'m sure I\'ve intimated earlier, I appreciate you are likely to get these kind of emails all the time but with the above in mind I\'d love to connect either way and then keep in touch from there.'
 		],
 		'listitems': [
 			'We build a variety of products from scratch',
@@ -79,7 +88,8 @@ var recruitmentIpsum = {
 			'HTML/CSS experience including the use of Twitter Bootstrap',
 			'TDD or BDD experience',
 			'Location: Amsterdam, Netherlands',
-			'Rate: Negotiable depending on experience'
+			'Rate: Negotiable depending on experience',
+			'I came across your profile while on the lookout for strong software engineers and was very impressed with your experience and background.'
 		]
 	},
 	'nl': {
@@ -178,7 +188,36 @@ var recruitmentIpsum = {
 			'Ik zie veel aanknopingspunten met jouw profiel en denk dat dit wellicht interessant voor jou zou kunnen zijn.',
 			'Mocht je niet geinteresseerd zijn dan hoor ik uiteraard ook graag van je.',
 			'Vorige week heb ik je onderstaand bericht gestuurd, maar hier helaas nog geen reactie op gehad.',
-			'Ken je wellicht iemand vanuit je netwerk voor wie deze positie momenteel wel interessant zou kunnen zijn?'
+			'Ken je wellicht iemand vanuit je netwerk voor wie deze positie momenteel wel interessant zou kunnen zijn?',
+			'Fair enough dat je het naar je zin hebt ;)',
+			'Zoek naar ontwikkelaars die volop aan de slag willen met interactie, frontend architectuur en code.',
+			'De focus op techniek als basis voor een optimale gebruikerservaring.',
+			'Zo ontstaan perfecte applicaties voor platformen van vandaag en die van morgen.',
+			'Mijn klant werkt met top-professionals op het gebied van front-end & app development.',
+			'Specialisten die de opdrachtgever en gebruiker van de applicatie willen verrassen.',
+			'Altijd met de laatste techniek en inzichten in het achterhoofd.',
+			'Zeker dat dit iets voor jou zou zijn Jeroen. Jij wilt toch zeker wel de frontend divisie gaan opzetten ;)?',
+			'Zou er voor jou wel een baan zijn waarvan je zegt, als je dit hebt dan zou dat wel interessant voor mij kunnen zijn?',
+			'Ik ben zojuist met mijn baas bij een nieuwe klant geweest.',
+			'Serieuze dingen.',
+			'Geweldige arbeidsvoorwaarden + een leasebudget.',
+			'Ik weet dat je zei dat je je momenteel goed voelt, maar you never know ;).',
+			'Ken jij toevallig iemand die dit interessant zou vinden?',
+			'Dit is een nieuwe functie die we gaan creeeren en de specificaties zijn daar nog niet voor klaar.',
+			'Ligt helemaal aan de persoon die we aan tafel hebben en hoe hij/zij denkt de functie in te kunnen gaan vullen.',
+			'Naar aanleiding van u profiel op Linkedin, zou ik graag willen weten of u momenteel beschikbaar bent voor een nieuwe uitdaging.',
+			'Mocht u binnen uw eigen netwerk nog kandidaten kennen die beschikbaar zijn? Dan verneem ik dit uiteraard graag.',
+			'Voor een eindklant van ons (in de omgeving van Eindhoven) zijn we opzoek naar een Front-end ontwikkelaar.',
+			'Vanwege jouw Frontend expertise en je ervaring, nodig ik je uit om te connecten.',
+			'Mijn klant staat graag in contact met de beste Lead developers van Nederland, ik denk dat jij zo iemand bent ;-) ik geef je graag meer info!',
+			'Graag leg ik je in dit bericht uit wat de reden is van mijn verbindingsverzoek en wat ik voor jou kan betekenen.',
+			'Om deze innovatieslag te realiseren, is het IT team op zoek naar een nieuwe Lead Frontend developer (vaste dienst), ofwel een Frontend expert die zijn team mee kan nemen in deze innovatieslag!',
+			'Ik heb je profiel bekeken, en vanwege jouw IT achtergrond en developer expertise verwacht ik deze functie interessant voor jou is.',
+			'Op welke dag en welk moment ben je het beste te bereiken?',
+			'Helaas heb ik nog geen reactie van je ontvangen.',
+			'Wellicht heb je nog geen tijd gehad of is het berichtje je ontschoten.',
+			'Graag ontvang ik je telefoonnummer zodat ik je meer kan vertellen over de uitdagingen die er zijn.',
+			'Op welke dag en op welk moment kan ik je het beste bereiken?'
 		],
 		'listitems': [
 			'Je werkt samen met designers aan een grote webshop',
