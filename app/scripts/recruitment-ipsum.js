@@ -68,7 +68,10 @@ var recruitmentIpsum = {
 			'Although in finance, it’s a relaxed work environment and they use some of the latest technologies to a TDD approach in an agile development process.',
 			'Its paying £55,000 - £70,000 + 15% Bonus and lots of other benefits.',
 			'I thought (on the face of it anyway) it looked like a good match for your profile.',
-			'As I\'m sure I\'ve intimated earlier, I appreciate you are likely to get these kind of emails all the time but with the above in mind I\'d love to connect either way and then keep in touch from there.'
+			'As I\'m sure I\'ve intimated earlier, I appreciate you are likely to get these kind of emails all the time but with the above in mind I\'d love to connect either way and then keep in touch from there.',
+			'We are growing our team and we are currently looking for a Senior UI Solutions Developer based in the Netherlands.',
+			'You have a very interesting profile, your skills and experience perfectly match what I am looking for.',
+			'Would you consider having an initial, informal and brief conversation about this opportunity?'
 		],
 		'listitems': [
 			'We build a variety of products from scratch',
@@ -217,7 +220,26 @@ var recruitmentIpsum = {
 			'Helaas heb ik nog geen reactie van je ontvangen.',
 			'Wellicht heb je nog geen tijd gehad of is het berichtje je ontschoten.',
 			'Graag ontvang ik je telefoonnummer zodat ik je meer kan vertellen over de uitdagingen die er zijn.',
-			'Op welke dag en op welk moment kan ik je het beste bereiken?'
+			'Op welke dag en op welk moment kan ik je het beste bereiken?',
+			'Je profiel is fascinerend.',
+			'Je hebt waardevolle Front-end ervaring.',
+			'Ik werk momenteel voor een organisatie die denk ik interessant is voor je.',
+			'Voel je alsjeblieft vrij contact met me op te nemen, of laat me weten hoe ik het beste in contact kom met jou.',
+			'Vanuit linked werd ik op jouw profiel geattendeerd.',
+			'Reden hierachter is dat wij onze kennis op het gebied van Front End /WebTechnologies aan het bundelen- en sterk aan het vergroten zijn.',
+			'De opbouw van jouw vakmanschap is precies zoals wij deze ook zien.',
+			'Daarnaast lees ik dat je ervaring hebt opgebouwd met verschillende technieken waaronder javascript talen.',
+			'Zijn er mogelijkheden denkbaar waaronder jij een overstap naar een succesvol bedrijf zou overwegen waar je verantwoordelijk zal zijn voor de analyse, ontwikkeling, ontwerp en realisatie van high-end front-end oplossingen?',
+			'Je bent vaardig in het programmeren met javascript en verdiep je maar al te graag in nieuwe technieken die alles makkelijker maakt.',
+			'Mooie code opleveren die leesbaar is, je bent niet anders gewend.',
+			'Je zal verantwoordelijk zijn voor de front-end van een webapplicatie die op verschillende devices moet draaien.',
+			'Mijn klant richt zich op ondersteunende afdelingen binnen een organisatie waardoor men gemakkelijker samen kan werken met hun leveranciers.',
+			'Het team wordt gedreven door TDD, Continuous Integration & Delivery, Deployment en Agile.',
+			'Technieken: JavaScript, Angular.JS, Gulp, Grunt, CSS, HTML, Async programmeren, best practices, design patterns.',
+			'Het bovenstaande is een greep uit het geheel en er is nog veel meer te vertellen.',
+			'Indien ik jouw aandacht enigszins heb kunnen trekken, vertel ik jou graag alles over deze mogelijkheid.',
+			'Uiteraard aan jou om te bepalen of we vervolgens door pakken na ons gesprek.',
+			'Sta je open voor meer informatie, op welk nummer zou ik je anders kunnen bereiken?'
 		],
 		'listitems': [
 			'Je werkt samen met designers aan een grote webshop',
