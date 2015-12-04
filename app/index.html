@@ -28,7 +28,7 @@
         <link rel="stylesheet" href="styles/app.css">
         <!-- endbuild -->
     </head>
-    <body onload="initialize()">
+    <body>
 
         <!--[if lt IE 10]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -44,7 +44,7 @@
                 </section>
             </header>
 
-            <section class="form-container">
+            <section id="generator" class="form-container">
                 <form name="recruitmentForm"> 
                     <input id="language" name="language" value="en" type="hidden">
                     <div class="form-block">
@@ -73,17 +73,6 @@
 
             <section>
                 <div id="disqus_thread"></div>
-                <script type="text/javascript">
-                    /* * * CONFIGURATION VARIABLES * * */
-                    var disqus_shortname = 'recruitmentipsum';
-                    
-                    /* * * DON'T EDIT BELOW THIS LINE * * */
-                    (function() {
-                        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                    })();
-                </script>
                 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
             </section>
         </div>
@@ -94,6 +83,22 @@
             </section>
         </footer>
 
+        <!-- build:js scripts/app.js -->
+        <script src="scripts/recruitment-ipsum.js"></script>
+        <!-- endbuild -->
+
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES * * */
+            var disqus_shortname = 'recruitmentipsum';
+            
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
@@ -102,9 +107,5 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-60080969-2','auto');ga('send','pageview');
         </script>
-
-        <!-- build:js scripts/app.js -->
-        <script src="scripts/recruitment-ipsum.js"></script>
-        <!-- endbuild -->
     </body>
 </html>

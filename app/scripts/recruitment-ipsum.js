@@ -341,6 +341,12 @@ var getList = function( amount, start, language ) {
 
 };
 
+var scrollToGenerator = function() {
+	var location = document.querySelector('#generator').offsetTop;
+	window.scrollTo(0, location);
+	console.log(location);
+};
+
 var getRecruitmentIpsum = function() {
 	var amount, type, output, start = false;
 
@@ -356,6 +362,9 @@ var getRecruitmentIpsum = function() {
 
 	// output
 	document.querySelector('#output').innerHTML = output;
+
+	// scroll to generator / output
+	scrollToGenerator();
 };
 
 document.recruitmentForm.onsubmit = function() {
@@ -363,8 +372,7 @@ document.recruitmentForm.onsubmit = function() {
 	return false;
 };
 
-
-function initialize() {
+var initialize = function() {
 	language = getParameterByName('language');
 	language = ['nl','en'].indexOf(language) === -1 ? 'en' : language;
 
@@ -377,4 +385,6 @@ function initialize() {
 
 	getRecruitmentIpsum();
 };
+
+initialize();
 
