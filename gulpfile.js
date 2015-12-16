@@ -1,7 +1,7 @@
 'use strict';
-// generated on 2014-11-29 using generator-gulp-webapp 0.1.0
 
 var gulp = require('gulp');
+var argv = require('yargs').argv;
 
 // load plugins
 var $ = require('gulp-load-plugins')();
@@ -39,11 +39,17 @@ gulp.task('html', ['styles'], function () {
         .pipe($.size());
 });
 
+gulp.task('cname', function () {
+    return gulp.src('app/CNAME')
+        .pipe(gulp.dest('dist'))
+        .pipe($.size());
+});
+
 gulp.task('clean', function () {
     return gulp.src(['.tmp', 'dist'], { read: false }).pipe($.clean());
 });
 
-gulp.task('build', ['html','images']);
+gulp.task('build', ['html', 'cname', 'images']);
 
 gulp.task('default', ['clean'], function () {
     gulp.start('build');
@@ -72,7 +78,6 @@ gulp.task('watch', ['connect', 'serve'], function () {
     var server = $.livereload();
 
     // watch for changes
-
     gulp.watch([
         'app/*.html',
         '.tmp/styles/**/*.css',
@@ -83,4 +88,15 @@ gulp.task('watch', ['connect', 'serve'], function () {
     });
 
     gulp.watch('app/styles/**/*.scss', ['styles']);
+});
+
+gulp.task('deploy', function() {
+
+    argv.message = argv.m || argv.message;
+
+    var options = {};
+    options.message = argv.message || 'Update '+ new Date();
+
+    return gulp.src('./dist/**/*')
+        .pipe($.ghPages(options));
 });

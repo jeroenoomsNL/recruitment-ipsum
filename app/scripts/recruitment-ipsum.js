@@ -71,7 +71,11 @@ var recruitmentIpsum = {
 			'As I\'m sure I\'ve intimated earlier, I appreciate you are likely to get these kind of emails all the time but with the above in mind I\'d love to connect either way and then keep in touch from there.',
 			'We are growing our team and we are currently looking for a Senior UI Solutions Developer based in the Netherlands.',
 			'You have a very interesting profile, your skills and experience perfectly match what I am looking for.',
-			'Would you consider having an initial, informal and brief conversation about this opportunity?'
+			'Would you consider having an initial, informal and brief conversation about this opportunity?',
+			'Im doing a bit of work around a vacancy this morning and wondered whether you had any interest at all.',
+			'I\'ve left the job description for you to have a look at.',
+			'I am very interested in your profile and was hoping to speak to you about a number of contract opportunities that i have available in Amsterdam at the moment.',
+			'Are you currently open to hearing about something new?'
 		],
 		'listitems': [
 			'We build a variety of products from scratch',
@@ -91,8 +95,7 @@ var recruitmentIpsum = {
 			'HTML/CSS experience including the use of Twitter Bootstrap',
 			'TDD or BDD experience',
 			'Location: Amsterdam, Netherlands',
-			'Rate: Negotiable depending on experience',
-			'I came across your profile while on the lookout for strong software engineers and was very impressed with your experience and background.'
+			'Rate: Negotiable depending on experience'
 		]
 	},
 	'nl': {
@@ -239,7 +242,25 @@ var recruitmentIpsum = {
 			'Het bovenstaande is een greep uit het geheel en er is nog veel meer te vertellen.',
 			'Indien ik jouw aandacht enigszins heb kunnen trekken, vertel ik jou graag alles over deze mogelijkheid.',
 			'Uiteraard aan jou om te bepalen of we vervolgens door pakken na ons gesprek.',
-			'Sta je open voor meer informatie, op welk nummer zou ik je anders kunnen bereiken?'
+			'Sta je open voor meer informatie, op welk nummer zou ik je anders kunnen bereiken?',
+			'Misschien een brutale vraag, maar sta jij open voor een nieuwe uitdaging als Front-end Developer?',
+			'We zitten in elkaars netwerk op Linkedin vandaar dat ik je je gegevens heb.',
+			'Het kan een mooi kans zijn om nu over te stappen!',
+			'Mijn vraag is hoe zou je het vinden om een salaris te verdienen tussen de € 55K en ... het max is altijd afhankelijk van wat het tarief naar de klant is.',
+			'Uiteraard staan wij ook open voor mensen uit je netwerk die ook interesse hebben zoeken meerdere kandidaten voor deze rol!!',
+			'Altijd ben ik opzoek naar interessante software developers die open staan voor contact.',
+			'Hoewel ik weet dat je hoogstwaarschijnlijk talloze keren per maand wordt benaderd, hoop ik dat je toch de tijd hebt om deze inmail te lezen.',
+			'Ik hecht waarde aan persoonlijk contact.',
+			'Idealiter werk ik met kandidaten samen die niet per direct weg willen bij een werkgever, maar wel open staan voor een volgende stap.',
+			'Ik zal vast niet de enige zijn die je benader via deze manier, mijn excuses voor deze manier van benaderen.',
+			'Mocht je op dit moment ook maar enigszins twijfelen aan je huidige functie/bedrijf, treedt met mij in contact.',
+			'De huidige markt is ontploft.',
+			'Ik ben op zoek naar mensen met jouw ervaring in jouw regio.',
+			'Na het zojuist bestuderen van jouw profiel was ik benieuwd of jij op dit moment nog voldoende uitdaging hebt om jezelf te verbeteren als ICT professional.',
+			'Dan is het altijd goed om nu in ieder geval met elkaar in contact te komen voor wel het \'juiste\' moment tijdens jouw carrière. ',
+			'Persoonlijk contact en aandacht in mijn werk is en vind ik het allerbelangrijkste!',
+			'Zie mij a.u.b. niet als een \'recruiter\' welke voor het snelle scoren gaat of niet snapt waar hij het over heeft. Ik weet namelijk dat je vaak genoeg wordt benaderd op een dergelijke onprofessionele manier.',
+
 		],
 		'listitems': [
 			'Je werkt samen met designers aan een grote webshop',
@@ -254,7 +275,12 @@ var recruitmentIpsum = {
 			'Bovengemiddeld salaris',
 			'Uitstekende secundaire arbeidsvoorwaarden',
 			'Een ruim leasebudget',
-			'Je komt te werken bij een succesvolle organisatie in Delft'
+			'Je komt te werken bij een succesvolle organisatie in Delft',
+			'Bizar goede toekomstperspectieven',
+			'Heel veel invloed en verantwoordelijkheid',
+			'Heel goede voorwaarden',
+			'Serieuze dingen',
+			'De huidige markt is ontploft'
 		]
 	}
 
