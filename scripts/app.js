@@ -388,12 +388,13 @@ var getRecruitmentIpsum = function() {
 
 	// output
 	document.querySelector('#output').innerHTML = output;
+
+	// scroll to generator / output
+	scrollToGenerator();
 };
 
 document.recruitmentForm.onsubmit = function() {
-	document.querySelector('#output').innerHTML = '';
-	scrollToGenerator();
-	setTimeout(getRecruitmentIpsum, 200);
+	getRecruitmentIpsum();
 	return false;
 };
 
