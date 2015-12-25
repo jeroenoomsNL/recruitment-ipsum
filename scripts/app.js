@@ -75,7 +75,9 @@ var recruitmentIpsum = {
 			'Im doing a bit of work around a vacancy this morning and wondered whether you had any interest at all.',
 			'I\'ve left the job description for you to have a look at.',
 			'I am very interested in your profile and was hoping to speak to you about a number of contract opportunities that i have available in Amsterdam at the moment.',
-			'Are you currently open to hearing about something new?'
+			'Are you currently open to hearing about something new?',
+			'Are you looking for a reliable, creative and experience Group for the Mobile Application and Website Designing and development?',
+			'Please let us know in case you have any such requirement, so that we can discuss rates'
 		],
 		'listitems': [
 			'We build a variety of products from scratch',
@@ -259,8 +261,16 @@ var recruitmentIpsum = {
 			'Na het zojuist bestuderen van jouw profiel was ik benieuwd of jij op dit moment nog voldoende uitdaging hebt om jezelf te verbeteren als ICT professional.',
 			'Dan is het altijd goed om nu in ieder geval met elkaar in contact te komen voor wel het \'juiste\' moment tijdens jouw carrière. ',
 			'Persoonlijk contact en aandacht in mijn werk is en vind ik het allerbelangrijkste!',
-			'Zie mij a.u.b. niet als een \'recruiter\' welke voor het snelle scoren gaat of niet snapt waar hij het over heeft. Ik weet namelijk dat je vaak genoeg wordt benaderd op een dergelijke onprofessionele manier.',
-
+			'Zie mij a.u.b. niet als een \'recruiter\' welke voor het snelle scoren gaat of niet snapt waar hij het over heeft.',
+			'Ik weet namelijk dat je vaak genoeg wordt benaderd op een dergelijke onprofessionele manier.',
+			'Aangezien je waarschijnlijk vaker benaderd wordt zal ik direct concreet worden omtrent de positie',
+			'Ik ben benieuwd of je ervoor openstaat om eens telefonisch van gedachte te wisselen?',
+			'Zo ja dan hoor ik graag wanneer en op welk nummer ik je het beste kan bereiken, uiteraard kan ik ook na werktijd ruimte vrij maken.',
+			'Hoe zijn de verdere vooruitzichten betreffende je carrière?',
+			'Zien die er nog zo goed uit of wil je ook wel weer eens om je heen kijken en nieuwe impulsen vinden?',
+			'Het is namelijk zo dat een zeer vooraanstaand bedrijf de interesse in jou kenbaar heeft gemaakt, door middel van jouw profiel op LinkedIn.',
+			'Ze zijn met de aller nieuwste technieken bezig op dit moment en besteden minimaal vier uur per week aan eigen Research & Development.',
+			'Er liggen daarom echt geweldige perspectieven voor jou, daarom zou ik dat ook graag eens telefonisch met je verder bespreken.'
 		],
 		'listitems': [
 			'Je werkt samen met designers aan een grote webshop',
