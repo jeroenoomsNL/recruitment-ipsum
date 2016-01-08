@@ -1,7 +1,16 @@
 {
   "name": "recruitment-ipsum",
-  "version": "0.0.1",
-  "dependencies": {},
+  "version": "1.0.0",
+  "homepage": "http://jeroenoomsnl.github.io/initialize-css/",
+  "description": "Recruitment Ipsum is a randomised collection of real recruitment mails",
+  "author": {
+    "name": "Jeroen Ooms",
+    "email": "info@jeroenooms.nl",
+    "url": "http://jeroenooms.nl"
+  },
+  "dependencies": {
+    "initialize-css": "^0.4.0"
+  },
   "devDependencies": {
     "connect": "^2.30.2",
     "connect-livereload": "^0.4.0",

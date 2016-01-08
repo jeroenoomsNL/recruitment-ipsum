@@ -1,10 +1,11 @@
 //
 // Imports
 //
-@import "includes/normalize";
-@import "includes/boilerplate";
-@import "includes/print";
 
+// Dependencies
+@import "initialize-css/dist/initialize";
+
+// Application imports
 @import "config";
 @import "main";
 @import "mediaqueries";

@@ -10,7 +10,8 @@ gulp.task('styles', function () {
     return gulp.src('app/styles/*.scss')
         .pipe($.rubySass({
             style: 'expanded',
-            precision: 10
+            precision: 10,
+            loadPath: ['node_modules']
         }))
         .pipe($.autoprefixer('last 2 versions'))
         .pipe(gulp.dest('.tmp/styles'))
@@ -90,7 +91,7 @@ gulp.task('watch', ['connect', 'serve'], function () {
     gulp.watch('app/styles/**/*.scss', ['styles']);
 });
 
-gulp.task('deploy', function() {
+gulp.task('deploy', ['build'], function() {
 
     argv.message = argv.m || argv.message;
 
