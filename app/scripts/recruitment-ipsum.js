@@ -270,7 +270,9 @@ var recruitmentIpsum = {
 			'Zien die er nog zo goed uit of wil je ook wel weer eens om je heen kijken en nieuwe impulsen vinden?',
 			'Het is namelijk zo dat een zeer vooraanstaand bedrijf de interesse in jou kenbaar heeft gemaakt, door middel van jouw profiel op LinkedIn.',
 			'Ze zijn met de aller nieuwste technieken bezig op dit moment en besteden minimaal vier uur per week aan eigen Research & Development.',
-			'Er liggen daarom echt geweldige perspectieven voor jou, daarom zou ik dat ook graag eens telefonisch met je verder bespreken.'
+			'Er liggen daarom echt geweldige perspectieven voor jou, daarom zou ik dat ook graag eens telefonisch met je verder bespreken.',
+			'Zojuist probeerde ik je even te bellen, maar kreeg je helaas niet te pakken.',
+			'Reden van mijn belletje is dat een concurrent van jullie mij heeft gevraagd om developers van Code te benaderen. Alvorens ik dit doe wilde ik je eerst even kort spreken om te kijken of jullie wellicht toch interessanter zijn om mee samen te werken.'
 		],
 		'listitems': [
 			'Je werkt samen met designers aan een grote webshop',
