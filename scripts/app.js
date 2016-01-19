@@ -77,7 +77,11 @@ var recruitmentIpsum = {
 			'I am very interested in your profile and was hoping to speak to you about a number of contract opportunities that i have available in Amsterdam at the moment.',
 			'Are you currently open to hearing about something new?',
 			'Are you looking for a reliable, creative and experience Group for the Mobile Application and Website Designing and development?',
-			'Please let us know in case you have any such requirement, so that we can discuss rates'
+			'Please let us know in case you have any such requirement, so that we can discuss rates',
+			'The environment is extremely cool, with interesting and exciting media events regularly, with an impressive financial package + amazing benefits.',
+			'It is non corporate and extremely relaxed, whilst you will have an opportunity to obtain new certifications and train on a variety of exciting technologies.',
+			'If you don\'t currently have experience with these, you will have the option to learn if you wish!',
+			'If you are interested, lets organise a good time to talk on the phone - I can arrange for whenever is convenient for you!'
 		],
 		'listitems': [
 			'We build a variety of products from scratch',
