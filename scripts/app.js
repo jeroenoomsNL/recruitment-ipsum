@@ -81,7 +81,11 @@ var recruitmentIpsum = {
 			'The environment is extremely cool, with interesting and exciting media events regularly, with an impressive financial package + amazing benefits.',
 			'It is non corporate and extremely relaxed, whilst you will have an opportunity to obtain new certifications and train on a variety of exciting technologies.',
 			'If you don\'t currently have experience with these, you will have the option to learn if you wish!',
-			'If you are interested, lets organise a good time to talk on the phone - I can arrange for whenever is convenient for you!'
+			'If you are interested, lets organise a good time to talk on the phone - I can arrange for whenever is convenient for you!',
+			'I appreciate we haven\'t spoken before but looking through your profile I am impressed with your background and think you’re a great match for an opportunity I have in London...',
+			'I am looking for a talented and versatile developer with client-side development experience to join a growing team, based in London.',
+			'You\'ll be rewarded with; competitive salary and benefits, room to grow and develop yourself including training, a stunning central London location, a great environment with intelligent, driven and passionate colleagues delivering excellence on a daily basis, and will always work with cutting edge technologies.',
+			'The role is paying up to £75k + benefits. Are you open to new opportunities in London at the moment or keen to find out more?'
 		],
 		'listitems': [
 			'We build a variety of products from scratch',
@@ -276,7 +280,17 @@ var recruitmentIpsum = {
 			'Ze zijn met de aller nieuwste technieken bezig op dit moment en besteden minimaal vier uur per week aan eigen Research & Development.',
 			'Er liggen daarom echt geweldige perspectieven voor jou, daarom zou ik dat ook graag eens telefonisch met je verder bespreken.',
 			'Zojuist probeerde ik je even te bellen, maar kreeg je helaas niet te pakken.',
-			'Reden van mijn belletje is dat een concurrent van jullie mij heeft gevraagd om developers van Code te benaderen. Alvorens ik dit doe wilde ik je eerst even kort spreken om te kijken of jullie wellicht toch interessanter zijn om mee samen te werken.'
+			'Reden van mijn belletje is dat een concurrent van jullie mij heeft gevraagd om developers van Code te benaderen. Alvorens ik dit doe wilde ik je eerst even kort spreken om te kijken of jullie wellicht toch interessanter zijn om mee samen te werken.',
+			'Ik ben op zoek naar een front end developer voor een leuk internet marketing bureau in Den Haag, en in mijn zoektocht kwam ik op jouw profiel terecht.',
+			'Het gaat om een functie in vast dienstverband.',
+			'Ik hoor graag van je of je interesse is gewekt!',
+			'Ik zie dat je een erg interessant LinkedIn profiel hebt.',
+			'Sta je ervoor open om eens een bak koffie te drinken?',
+			'We kennen elkaar nog niet, ik zag mooie frontend zaken, wij focussen op innovatieve trajecten en hebben al veel mooie projecten gedaan (zie ook handgreep filmpjes mijn profiel), hier is de voorkant super belangrijk!',
+			'Wellicht is interessant keer kennis te maken?',
+			'Ik ben mijn eigen uitzendbureau aan het opzetten.',
+			'Momenteel ben ik mijn netwerk aan het vergroten.',
+			'Wie weet kunnen wij elkaar helpen in de toekomst!'
 		],
 		'listitems': [
 			'Je werkt samen met designers aan een grote webshop',
