@@ -290,7 +290,15 @@ var recruitmentIpsum = {
 			'Wellicht is interessant keer kennis te maken?',
 			'Ik ben mijn eigen uitzendbureau aan het opzetten.',
 			'Momenteel ben ik mijn netwerk aan het vergroten.',
-			'Wie weet kunnen wij elkaar helpen in de toekomst!'
+			'Wie weet kunnen wij elkaar helpen in de toekomst!',
+			'Opzoek naar een nieuwe uitdaging als Front-end Developer voor een groot bedrijf?',
+			'Ben je beschikbaar en heb ik je interesse gewekt, kun je mij een bericht sturen op LinkedIn of bellen.',
+			'Als je open staat voor een kop koffie hoor ik het graag!',
+			'Voor een snelgroeiend, jong bedrijf dat gespecialiseerd is in customer relationship management, ben ik op zoek naar een front-end web developer.',
+			'Op dit moment zijn er ongeveer 100 mensen in dienst, die tezamen aan 1600 bedrijven hun service bieden.',
+			'Ik ben op zoek naar zowel medior als senior front-end web developer.',
+			'Ben jij de Medior/senior front-end web developer die dit snelgroeiende team wil versterken?',
+			'Je zal in een autonoom, zelf-sturend team werken, zonder al te veel sturing van bovenaf, maar waar de samenwerking tussen collega’s zeer belangrijk wordt gevonden.'
 		],
 		'listitems': [
 			'Je werkt samen met designers aan een grote webshop',
@@ -310,7 +318,10 @@ var recruitmentIpsum = {
 			'Heel veel invloed en verantwoordelijkheid',
 			'Heel goede voorwaarden',
 			'Serieuze dingen',
-			'De huidige markt is ontploft'
+			'De huidige markt is ontploft',
+			'Een flexibel en informele werkomgeving',
+			'Bruto salaris tussen €2.500 en €4.000',
+			'Uitstekende benefits'
 		]
 	}
 
