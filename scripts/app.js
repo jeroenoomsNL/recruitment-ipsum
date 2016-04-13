@@ -298,7 +298,13 @@ var recruitmentIpsum = {
 			'Op dit moment zijn er ongeveer 100 mensen in dienst, die tezamen aan 1600 bedrijven hun service bieden.',
 			'Ik ben op zoek naar zowel medior als senior front-end web developer.',
 			'Ben jij de Medior/senior front-end web developer die dit snelgroeiende team wil versterken?',
-			'Je zal in een autonoom, zelf-sturend team werken, zonder al te veel sturing van bovenaf, maar waar de samenwerking tussen collega’s zeer belangrijk wordt gevonden.'
+			'Je zal in een autonoom, zelf-sturend team werken, zonder al te veel sturing van bovenaf, maar waar de samenwerking tussen collega’s zeer belangrijk wordt gevonden.',
+			'Door het tekort aan ervaren Frontend Developers is jouw marktwaarde de laatste jaren gestegen.',
+			'Om de bedrijfsdoelstellingen te halen zijn opdrachtgevers van recruitmentbureaus bereid hoge wervingsfees voor jou te betalen.',
+			'Maar hoort het geld wat jouw jobswitch blijkbaar waard is niet gewoon bij jou terecht te komen? Wij vinden van wel.',
+			'Als jij zonder tussenkomst van een headhunter of recruiter bij ons komt werken, steek je 15% van jouw jaarsalaris als startbonus in jouw zak.',
+			'Dat zijn toch zo\'n twee maandsalarissen.',
+			'Je gaf in het verleden wel eens bij mij aan dat jij regelmatig wordt benaderd door recruiters en headhunters.'
 		],
 		'listitems': [
 			'Je werkt samen met designers aan een grote webshop',
