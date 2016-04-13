@@ -47,7 +47,7 @@ gulp.task('cname', function () {
 });
 
 gulp.task('clean', function () {
-    return gulp.src(['.tmp', 'dist'], { read: false }).pipe($.clean());
+    return gulp.src(['.tmp', 'dist', '.sass-cache', '.publish'], { read: false }).pipe($.clean());
 });
 
 gulp.task('build', ['html', 'cname', 'images']);
