@@ -304,7 +304,19 @@ var recruitmentIpsum = {
 			'Maar hoort het geld wat jouw jobswitch blijkbaar waard is niet gewoon bij jou terecht te komen? Wij vinden van wel.',
 			'Als jij zonder tussenkomst van een headhunter of recruiter bij ons komt werken, steek je 15% van jouw jaarsalaris als startbonus in jouw zak.',
 			'Dat zijn toch zo\'n twee maandsalarissen.',
-			'Je gaf in het verleden wel eens bij mij aan dat jij regelmatig wordt benaderd door recruiters en headhunters.'
+			'Je gaf in het verleden wel eens bij mij aan dat jij regelmatig wordt benaderd door recruiters en headhunters.',
+			'Tja, wat moet ik nog zeggen..',
+			'Je hebt een heel interessant profiel en wordt zeker ontzettend vaak benaderd voor de \'allerleukste organisatie\' met de \'ultieme job\'.',
+			'Het zal dus lastig worden om onderscheidend te zijn.',
+			'Daarom ter verduidelijking: ik ben geen recruiter van een willekeurige agency, maar ik werk bij technisch een eCommerce bureau op de HR afdeling.',
+			'Door de groeiende vraag naar onze diensten krijgen wij steeds meer uitdagende projecten en daarom zijn wij op zoek naar een Sr./Lead Front-Ender.',
+			'Het is belangrijk dat je oog hebt voor de architectuur en gemakkelijk mee kan in de complexe manier van denken.',
+			'Wij hebben je al eens eerder benaderd, en zouden het leuk vinden om alsnog eens met jou ideeën uit te wisselen over een uitdagende functie bij ons.'
+			'Wij hebben de luxe positie om mensen de inhoud te kunnen bieden die zij verlangen, in plaats van hen in een rol te proppen die hen niet ligt.',
+			'Certificaten behalen?',
+			'Op sloffen naar je werk?',
+			'De mogelijkheden zijn er!',
+			'Daarom zijn wij benieuwd naar hoe wij een gave job voor jou kunnen creëren.'
 		],
 		'listitems': [
 			'Je werkt samen met designers aan een grote webshop',
@@ -327,7 +339,10 @@ var recruitmentIpsum = {
 			'De huidige markt is ontploft',
 			'Een flexibel en informele werkomgeving',
 			'Bruto salaris tussen €2.500 en €4.000',
-			'Uitstekende benefits'
+			'Uitstekende benefits',
+			'Certificaten behalen?',
+			'Op sloffen naar je werk?',
+			'De mogelijkheden zijn er!'
 		]
 	}
 
