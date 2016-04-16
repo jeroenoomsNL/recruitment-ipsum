@@ -311,7 +311,7 @@ var recruitmentIpsum = {
 			'Daarom ter verduidelijking: ik ben geen recruiter van een willekeurige agency, maar ik werk bij technisch een eCommerce bureau op de HR afdeling.',
 			'Door de groeiende vraag naar onze diensten krijgen wij steeds meer uitdagende projecten en daarom zijn wij op zoek naar een Sr./Lead Front-Ender.',
 			'Het is belangrijk dat je oog hebt voor de architectuur en gemakkelijk mee kan in de complexe manier van denken.',
-			'Wij hebben je al eens eerder benaderd, en zouden het leuk vinden om alsnog eens met jou ideeën uit te wisselen over een uitdagende functie bij ons.'
+			'Wij hebben je al eens eerder benaderd, en zouden het leuk vinden om alsnog eens met jou ideeën uit te wisselen over een uitdagende functie bij ons.',
 			'Wij hebben de luxe positie om mensen de inhoud te kunnen bieden die zij verlangen, in plaats van hen in een rol te proppen die hen niet ligt.',
 			'Certificaten behalen?',
 			'Op sloffen naar je werk?',
