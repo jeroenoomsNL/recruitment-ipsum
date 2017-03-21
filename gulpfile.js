@@ -49,6 +49,12 @@ gulp.task('html', function () {
         .pipe($.size({title: 'html'}));
 });
 
+gulp.task('copy', function () {
+    return gulp.src(config.src.base + '/CNAME')
+        .pipe(gulp.dest(config.dist.base))
+        .pipe($.size({title: 'copy'}));
+});
+
 gulp.task('clean', function (cb) {
     rimraf(config.dist.base, cb);
 });
@@ -68,7 +74,7 @@ gulp.task('watch', ['build'], function () {
     browserSync.watch([config.dist.base + '/**/*']).on('change', browserSync.reload);
 });
 
-gulp.task('build', ['styles', 'html', 'scripts']);
+gulp.task('build', ['styles', 'html', 'scripts', 'copy']);
 
 gulp.task('deploy', ['build'], function() {
     params.message = params.m || params.message;
