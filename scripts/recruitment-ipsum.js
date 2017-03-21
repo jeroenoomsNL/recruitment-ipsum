@@ -316,7 +316,19 @@ var recruitmentIpsum = {
 			'Certificaten behalen?',
 			'Op sloffen naar je werk?',
 			'De mogelijkheden zijn er!',
-			'Daarom zijn wij benieuwd naar hoe wij een gave job voor jou kunnen creëren.'
+			'Daarom zijn wij benieuwd naar hoe wij een gave job voor jou kunnen creëren.',
+			'Interessant profiel heb je.',
+			'Met name je kennis en ervairng met AngularJS en Javascript zijn interessant.',
+			'Ik zou graag met je in contact komen om te bekijken wat jouw ambitites zijn op carrieregebied wellicht kunnen wij jou helpen jouw ambitites waar te maken.',
+			'Ook lever je een bijdrage aan de ontwikkeling van het platform.',
+			'Ik kwam jouw profiel tegen op Linkedin en graag wil ik je een aanvraag van onze klant voorleggen, wellicht heb je interesse.',
+			'Wellicht heb je deze berichten (nog) niet gelezen, vond je het op dat moment niet interessant of communiceer je liever via een andere weg.',
+			'Vandaar dat ik je deze mail stuur.',
+			'Dit bedrijf gelooft dat hun medewerkers vakmensen zijn en hun werk het beste uitvoeren als zij hier plezier in hebben.',
+			'Een leuke kans kan tenslotte altijd voorbij komen en het zou zonde zijn deze ongezien te verliezen.',
+			'Ik stel je reactie zeer op prijs en ben benieuwd wat wij voor elkaar kunnen betekenen.',
+			'Ik hoor graag zo snel mogelijk van je!'
+
 		],
 		'listitems': [
 			'Je werkt samen met designers aan een grote webshop',
@@ -342,7 +354,8 @@ var recruitmentIpsum = {
 			'Uitstekende benefits',
 			'Certificaten behalen?',
 			'Op sloffen naar je werk?',
-			'De mogelijkheden zijn er!'
+			'De mogelijkheden zijn er!',
+			'Oplossingsgerichtheid en accuratesse'
 		]
 	}
 
