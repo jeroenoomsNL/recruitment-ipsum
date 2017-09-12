@@ -9,18 +9,21 @@ It starts with the magic phrase: "Recruitment ipsum first of all I want to apolo
 ## Usage
 
 After cloning the repository:
-
 ```
 npm install
 ```
 
 Build the project:
-
 ```
 gulp
 ```
-Watch and auto refresh while editing:
 
+Watch and auto refresh while editing:
 ```
 gulp watch
+```
+
+Deploy to Github Pages with commit message (do a gulp build first)
+```
+gulp deploy -m 'Add new recruitment bingo'
 ```
