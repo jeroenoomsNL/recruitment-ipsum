@@ -85,7 +85,12 @@ var recruitmentIpsum = {
 			'I appreciate we haven\'t spoken before but looking through your profile I am impressed with your background and think you’re a great match for an opportunity I have in London...',
 			'I am looking for a talented and versatile developer with client-side development experience to join a growing team, based in London.',
 			'You\'ll be rewarded with; competitive salary and benefits, room to grow and develop yourself including training, a stunning central London location, a great environment with intelligent, driven and passionate colleagues delivering excellence on a daily basis, and will always work with cutting edge technologies.',
-			'The role is paying up to £75k + benefits. Are you open to new opportunities in London at the moment or keen to find out more?'
+			'The role is paying up to £75k + benefits. Are you open to new opportunities in London at the moment or keen to find out more?',
+			'The reason I ask is because I am currently working on a senior/lead frontend role for a product company based in Utrecht.',
+			'They have created their own algorithm in order to reduce downtime in companies.',
+			'Unfortunately they cannot promise you a Tesla Model S but they can pay up to €75k.',
+			'They are looking for a frontend developer with design experience which I have seen you previously have had.',
+			'Is this something you might be open to?'
 		],
 		'listitems': [
 			'We build a variety of products from scratch',
@@ -327,8 +332,9 @@ var recruitmentIpsum = {
 			'Dit bedrijf gelooft dat hun medewerkers vakmensen zijn en hun werk het beste uitvoeren als zij hier plezier in hebben.',
 			'Een leuke kans kan tenslotte altijd voorbij komen en het zou zonde zijn deze ongezien te verliezen.',
 			'Ik stel je reactie zeer op prijs en ben benieuwd wat wij voor elkaar kunnen betekenen.',
-			'Ik hoor graag zo snel mogelijk van je!'
-
+			'Ik hoor graag zo snel mogelijk van je!',
+			'Graag kom ik met je in contact zodat ik een luisterend oor kan zijn naar je wensen bij een eventuele overstap.',
+			'Op basis hiervan kijk ik graag in mijn portfolio naar passend opties.'
 		],
 		'listitems': [
 			'Je werkt samen met designers aan een grote webshop',
