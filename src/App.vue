@@ -35,7 +35,7 @@ body {
   color: #173e43;
   margin: 0;
   line-height: 1.4;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -71,11 +71,11 @@ blockquote {
 
   header {
     background-color: #173e43; 
-    height: 500px;
 
     @media (min-width: 900px) {
       background: url('./assets/background.jpg');
       background-size: cover;
+      height: 500px;
     }
   }
 
@@ -119,7 +119,9 @@ blockquote {
   }
 
   .page {
-    margin-top: -250px;
+    @media (min-width: 900px) {
+      margin-top: -250px;
+    }
   }
 
   .container {

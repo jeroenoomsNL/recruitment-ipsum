@@ -138,6 +138,7 @@ export default {
     .new {
       background: #fae596;
       cursor: pointer;
+      display: none;
       font-weight: bold;
       font-size: 3.4em;
       text-align: center;
@@ -151,6 +152,10 @@ export default {
       user-select: none;
       right: 20px;
       top: -150px;
+
+      @media (min-width: 900px) {
+        display: block;
+      }
 
       @media (min-width: 1000px) {
         right: -40px;
@@ -237,11 +242,13 @@ export default {
     }
 
     .startwith {
+      font-size: 0.8em;
       margin-bottom: 20px;
       order: 2;
       width: 100%;
 
       @media (min-width: 900px) {
+        font-size: 1em;
         margin-bottom: 0;
         order: 3;
         text-align: center;
@@ -349,7 +356,6 @@ export default {
 
     h2 {
       font-size: 1.2em;
-      font-weight: normal;
       line-height: 1.6;
       margin: 0 0 1em;
 
@@ -359,12 +365,11 @@ export default {
     }
 
     .generator-heading {
-      margin: 0 0 1em;
+      margin: 0 0 2em;
       text-align: center;
       font-size: 1em;
 
       @media (min-width: 900px) {
-        margin: 0 0 2em;
         font-size: 1.5em;
 
         span {
