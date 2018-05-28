@@ -12,8 +12,10 @@
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "lint": "eslint --ext .js,.vue src",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "deploy": "node ./node_modules/vue-gh-pages/index.js"
   },
+  "homepage": "git@github.com:jeroenoomsNL/recruitment-ipsum",
   "dependencies": {
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
@@ -59,6 +61,7 @@
     "shelljs": "^0.7.6",
     "uglifyjs-webpack-plugin": "^1.1.1",
     "url-loader": "^0.5.8",
+    "vue-gh-pages": "^1.16.0",
     "vue-loader": "^13.3.0",
     "vue-scrollto": "^2.11.0",
     "vue-style-loader": "^3.0.1",
