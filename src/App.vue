@@ -18,6 +18,7 @@
         <a href="https://fontawesome.com/" target="_blank"><span>Font Awesome</span> <i class="fab fa-font-awesome-flag"></i></a> and
         <a href="https://pexels.com/" target="_blank"><span>Pexels</span> <i class="fas fa-image"></i></a>
       </p>
+      <p>View the source code on <a href="https://github.com/jeroenoomsNL/recruitment-ipsum" target="_blank"><span>Github</span> <i class="fab fa-github"></i></a></p>
       <p>Special thanks to all those creative recruiters out there! <i class="fas fa-heart"></i></p>
     </footer>
   </div>

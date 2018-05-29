@@ -26,19 +26,17 @@
       </form>
     </div>
     <div id="result">
-      <div class="container generated" v-if="ipsum">
-        <h2>Here is your Recruitment Ipsum!</h2>
-
-        <p v-for="(content, index) in ipsum.content" v-bind:key="index" v-if="ipsum.type === 'sentences'">
-          {{content}}
-        </p>
-
-        <ul v-for="(content, index) in ipsum.content" v-bind:key="index" v-if="ipsum.type === 'listitems'">
-          <li v-for="(group, subindex) in content.items" v-bind:key="subindex">
-            {{group.item}}
-          </li>
-        </ul>
-      </div>
+        <div class="container generated" v-if="ipsum">
+          <h2>Here is your Recruitment Ipsum!</h2>
+          <p v-for="(content, index) in ipsum.content" v-bind:key="index" v-if="ipsum.type === 'sentences'">
+            {{content}}
+          </p>
+          <ul v-for="(content, index) in ipsum.content" v-bind:key="index" v-if="ipsum.type === 'listitems'">
+            <li v-for="(group, subindex) in content.items" v-bind:key="subindex">
+              {{group.item}}
+            </li>
+          </ul>
+        </div>
     </div>
   </div>
 </template>
@@ -72,23 +70,26 @@ export default {
       return newPayoff;
     },
     generateRecruitmentIpsum: function () {
-      let result = { content: [] };
+      let result = { content: [], type: this.type };
       let data;
       let items = [];
       let randomCount;
       let tempDocument;
 
+      // get content from the json file
       data = this.json[this.language][this.type];
 
+      // create an array with random data that's long enough
       while(items.length < this.amount * 8) {
         items = items.concat(data.sort(function () { return 0.5 - Math.random() }));
       }
 
+      // add start sentence when requested
       if(this.startwith) {
         this.type === 'sentences' ? items.unshift(this.json[this.language].startSentence) : items.unshift(this.json[this.language].startListitem);
       }
 
-      result.type = this.type;
+      // generate that awesome recruitment ipsum
       for (let i = 0; i < this.amount; i++) {
         randomCount = Math.floor((Math.random() * 3) + 4);
         result.content[i] = this.type === 'sentences' ? '' : { items: [] };
@@ -160,11 +161,6 @@ export default {
       @media (min-width: 1000px) {
         right: -40px;
         top: -40px;
-      }
-
-      &:hover {
-        background: #173e43;
-        color: #fae596;
       }
 
       span {
@@ -313,21 +309,17 @@ export default {
         border: 1px solid #173e43;
         cursor: pointer;
         display: flex;
+        font-size: 0.8em;
         height: 40px;
         justify-content: space-between;
         padding: 0 10px;
         width: 100%;
 
         @media (min-width: 900px) {
+          font-size: 1em;
           height: 60px;
           margin-bottom: 20px;
           padding: 0 20px;
-        }
-
-        &:hover {
-          i { 
-            display: inline-block;
-          }
         }
       }
     }
@@ -347,7 +339,7 @@ export default {
         height: 60px;
       }
 
-      &:hover, &:active {
+      &:active {
         background-color: white;
         border: 1px solid #3fb0ac;
         color: #3fb0ac;
@@ -365,12 +357,14 @@ export default {
     }
 
     .generator-heading {
+      font-size: 1em;
+      font-weight: normal;
       margin: 0 0 2em;
       text-align: center;
-      font-size: 1em;
 
       @media (min-width: 900px) {
         font-size: 1.5em;
+        font-weight: bold;
 
         span {
           display: block;
