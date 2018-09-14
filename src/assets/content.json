@@ -110,7 +110,14 @@
         "Our client is looking for an Angular developer to join their deployment team in a large project they are undertaking.",
         "The program is expected to last 10 years.",
         "Does this sound of interest to you, if so when are you free today to speak?",
-        "If you are not free who can you recommend?"
+        "If you are not free who can you recommend?",
+        "We want to fill this positions soon.",
+        "If you have some interest I woud love to hear from you!",
+        "Let me know if you are looking for permanent roles at the moment and I’ll be more than happy to give you the details.",
+        "I checked out your profile and noticed you have strong experience in a range of technologies.",
+        "I am working with a number of companies that would be very interested in your depth of knowledge.",
+        "I'm sure you get a few messages so I will happily be upfront with you and send over the jobs and company names I'm working with if you had any interest in seeing what was out there?",
+        "You may have heard of them I dont know, they aren't a huge business but do have a great reputation here."
     ],
     "listitems": [
         "We build a variety of products from scratch",
@@ -434,7 +441,25 @@
         "Je zult werken aan een high availability platform (1.000.000 bezoekers) en deze constant verbeteren.",
         "Het bedrijf is 2600 medewerkers groot en genereert een omzet van 1,5 miljard euro per jaar.",
         "Op welk nummer kan ik jou bereiken dat we eens over deze functie sparren?",
-        "Mocht het daarna niks zijn dan weet je ieder geval wat meer over de functie."
+        "Mocht het daarna niks zijn dan weet je ieder geval wat meer over de functie.",
+        "Ik zou graag met je willen sparren over de mogelijkheden.",
+        "Ben je momenteel beschikbaar voor minimaal 32 en maximaal 36 uur per week?",
+        "1 dag per week thuis werken is mogelijk, de rest op locatie in Tilburg.",
+        "Ik sta momenteel in contact met een organisatie in Hoofddorp, die op zoek is naar een front-end developer.",
+        "Je hebt waarschijnlijk nog iets lopen, maar deze opdracht kan tot halverwege september worden ingevuld.",
+        "Binnen deze applicatie komen meerdere datastromen van de organisatie samen, zodat deze inzichten kan genereren voor verschillende afdelingen.",
+        "Het betreft een nieuw team binnen een bestaande applicatie dus er wordt veel pro activiteit en creativiteit van je verwacht.",
+        "Samen met je (Scrum) team sta je hierbij continu in contact met de eindgebruikers.",
+        "De klant biedt een uitdagend project, goede sfeer en lange projecten.",
+        "Wij zoeken een enthousiaste, kneiter goede ontwikkelaar.",
+        "Wij zijn hard gegroeid qua team en klanten.",
+        "Om te kunnen blijven groeien (ook qua platform) zoeken we nu een goede lead front end developer die het front end team op sleeptouw kan nemen.",
+        "Gezien de partijen waar jij je mee associeert zou ik graag een keer van gedachten willen wisselen.",
+        "Ik ben verantwoordelijk voor het begeleiden van professionals die overwegen om via ons unieke concept te gaan werken.",
+        "De voorwaarden zijn helder.",
+        "Een salaris tot 5000 euro is bespreekbaar",
+        "Een laptop en mobiel zijn een zekerheid alsmede de flexibiliteit van de uren.",
+        "Volgens mij ben jij hard op weg om een eindbaas te worden(als je dat al niet bent."
     ],
     "listitems": [
         "Je werkt samen met designers aan een grote webshop",
@@ -475,6 +500,9 @@
         "Enorm veel opleidingsmogelijkheden",
         "Doorgroeimogelijkheden",
         "Als frontend met angular en cloud!",
-        "Of als backender met nodejs en cloud!"
+        "Of als backender met nodejs en cloud!",
+        "Ervaring met het coderen in TypeScript",
+        "Dependency Injection (Unity)",
+        "Javascript, HTML, CSS"
     ]}
 }
