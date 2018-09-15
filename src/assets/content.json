@@ -117,7 +117,9 @@
         "I checked out your profile and noticed you have strong experience in a range of technologies.",
         "I am working with a number of companies that would be very interested in your depth of knowledge.",
         "I'm sure you get a few messages so I will happily be upfront with you and send over the jobs and company names I'm working with if you had any interest in seeing what was out there?",
-        "You may have heard of them I dont know, they aren't a huge business but do have a great reputation here."
+        "You may have heard of them I dont know, they aren't a huge business but do have a great reputation here.",
+        "I noticed you were open to new opportunities and I wanted to make you aware of an opportunity that I am working on which may be of interest to you.",
+        "Is this of interest? If so, what is best number to reach you on? If not, would you know anybody that would be interested in this?"
     ],
     "listitems": [
         "We build a variety of products from scratch",
@@ -459,7 +461,16 @@
         "De voorwaarden zijn helder.",
         "Een salaris tot 5000 euro is bespreekbaar",
         "Een laptop en mobiel zijn een zekerheid alsmede de flexibiliteit van de uren.",
-        "Volgens mij ben jij hard op weg om een eindbaas te worden(als je dat al niet bent."
+        "Volgens mij ben jij hard op weg om een eindbaas te worden(als je dat al niet bent.",
+        "Zojuist kwam ik jouw profiel tegen en ik zou graag in contact willen komen met je, wellicht kunnen we nu of in de toekomst iets voor elkaar betekenen.",
+        "Excuus voor het ietwat directe bericht maar in hoeverre sta jij open om een stap te maken in je carrière?",
+        "Op basis van jouw LinkedIn profiel zie ik enorm veel kansen.",
+        "Heb jij vanmiddag of morgen tijd om hierover te spreken?",
+        "Ik kijk uit naar je reactie.",
+        "Je hebt een zeer interessant profiel.",
+        "Omdat je profiel erg goed aansluit op de vaardigheden waar wij naar opzoek zijn, zou deze mogelijkheid wellicht je ogen kunnen openen.",
+        "Onze klanten bieden de mogelijkheid om aan bestaande of greenfield projecten te werken afhankelijk van het type uitdaging waar je naar op zoek bent en het best bij je ambities past.",
+        "Ik hoor graag van je of deze uitdaging match met de volgende stap in je carrière."
     ],
     "listitems": [
         "Je werkt samen met designers aan een grote webshop",
@@ -503,6 +514,15 @@
         "Of als backender met nodejs en cloud!",
         "Ervaring met het coderen in TypeScript",
         "Dependency Injection (Unity)",
-        "Javascript, HTML, CSS"
+        "HBO werk- en denkniveau",
+        "Beheersing van de Nederlandse en Engelse taal",
+        "Boven marktconform basissalaris (50k – 80k) plus bonus",
+        "Signing bonus",
+        "25 betaalde vakantiedagen",
+        "Pensioen (50/50)",
+        "Trainingsbudget (€1.000,- + 5 trainingsdagen)",
+        "Laptop naar keuze (Tot €3.500,-)",
+        "Community deelname zoals: meetups, hackathons, conferenties etc",
+        "Incentives & teambuilding uitjes zoals; skiën, beach bbq, borrel en meer"
     ]}
 }
