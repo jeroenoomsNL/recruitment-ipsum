@@ -22,7 +22,7 @@ npm run build --report
 # deploy to github pages 
 npm install -g vue-cli-ghpages
 
-vcg --message="Deploy Recruitment Ipsum to Github Pages" --CNAME=recruitmentipsum.com
+vcg --message="Deploy new version of Recruitment Ipsum to Github Pages" --CNAME=recruitmentipsum.com
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
