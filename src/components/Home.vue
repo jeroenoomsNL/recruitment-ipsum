@@ -96,7 +96,7 @@
     </div>
     <div id="result">
       <div class="container generated" v-if="ipsum">
-        <h2>Here is your Recruitment Ipsum!</h2>
+        <h2>{{ resultTitle }}</h2>
         <div v-if="ipsum.type === 'sentences'">
           <p v-for="(content, index) in ipsum.content" :key="index">
             {{ content }}
@@ -128,12 +128,26 @@ export default {
       amount: 15,
       startwith: true,
       payoff: null,
+      resultTitle: null,
     };
   },
   created: function() {
     this.payoff = this.json.payoffs[0];
   },
   methods: {
+    getResultTitle: function(language) {
+      let index;
+      let newResultTitle = this.resultTitle;
+
+      while (newResultTitle === this.resultTitle) {
+        index = Math.floor(
+          Math.random() * this.json.resultTitles[language].length
+        );
+        newResultTitle = this.json.resultTitles[language][index];
+      }
+
+      return newResultTitle;
+    },
     newPayoff: function() {
       let index;
       let newPayoff = this.payoff;
@@ -199,7 +213,8 @@ export default {
         }
       }
 
-      // set new lorem ipsum to display
+      // set new recruitment ipsum to view
+      this.resultTitle = this.getResultTitle(this.language);
       this.ipsum = result;
 
       // scroll to result container

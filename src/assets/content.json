@@ -8,6 +8,19 @@
     "let's have some fun!",
     "powered by recruiters!"
   ],
+  "resultTitles": {
+    "en": [
+      "Here is your Recruitment Ipsum!",
+      "Your Recruitment Ipsum is ready!",
+      "Enjoy this Recruitment Ipsum!",
+      "Thank you for using Recruitment Ipsum!"
+    ],
+    "nl": [
+      "Hier is jouw Recruitment Ipsum!",
+      "De Recruitment Ipsum is klaar!",
+      "Geniet van deze Recruitment Ipsum!"
+    ]
+  },
   "en": {
     "startSentence": "Recruitment ipsum first of all I want to apologise for contacting you randomly out of the blue.",
     "startListitem": "Recruitment ipsum first of all I want to apologise",
