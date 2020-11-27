@@ -9,8 +9,7 @@
     "powered by recruiters!"
   ],
   "en": {
-    "startSentence":
-      "Recruitment ipsum first of all I want to apologise for contacting you randomly out of the blue.",
+    "startSentence": "Recruitment ipsum first of all I want to apologise for contacting you randomly out of the blue.",
     "startListitem": "Recruitment ipsum first of all I want to apologise",
     "sentences": [
       "First of all I want to apologise for contacting you randomly out of the blue.",
@@ -185,8 +184,7 @@
     ]
   },
   "nl": {
-    "startSentence":
-      "Recruitment ipsum ik weet dat je me niet kent, maar zou jij misschien contact met me op kunnen nemen via onderstaand nummer?",
+    "startSentence": "Recruitment ipsum ik weet dat je me niet kent, maar zou jij misschien contact met me op kunnen nemen via onderstaand nummer?",
     "startListitem": "Recruitment ipsum ik weet dat je me niet kent",
     "starters": ["Hoe is het met je?"],
     "sentences": [
@@ -576,8 +574,7 @@
       "Dit keer geen copy paste openingsbericht van een recruiter maar een concrete vacature waarvan ik denk dat het een leuke volgende stap is in jouw carrière.",
       "Hiervoor hebben ze op het moment 33 mensen in dienst hier in Nederland.",
       "Ze werken ook in de USA, UAE en Brazilië.",
-      "Ik stuur je de vacature en bedrijfspagina toe zodat je zelf ook even kan kijken.",
-      
+      "Ik stuur je de vacature en bedrijfspagina toe zodat je zelf ook even kan kijken."
     ],
     "listitems": [
       "Je werkt samen met designers aan een grote webshop",
