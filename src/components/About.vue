@@ -3,12 +3,10 @@
     <h2>The story behind Recruitment Ipsum</h2>
 
     <p>
-      In 2011 I started working at
-      <a href="https://www.incentro.com/" title="Incentro" target="_blank"
-        >Incentro</a
-      >, it's a Great Place to Work! Since the first week, I immediately got
-      lots of messages from recruiters to convince me that the grass is greener
-      somewhere else. Frontend developers are hot, they say...
+      In 2011 I started working at a consultancy company as a Front-end
+      Developer. Since the first week, I immediately got lots of messages from
+      recruiters to convince me that the grass is greener somewhere else.
+      Frontend developers are hot, they say...
     </p>
 
     <p>
