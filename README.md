@@ -4,6 +4,24 @@
 
 The project is build with [Vue.js](http://vuejs.org)
 
+## Contribute
+
+```bash
+# install vue cli
+yarn global add @vue/cli
+
+# serve with hot reload at localhost:8080
+yarn serve
+
+# build for production with minification
+yarn build
+
+# deploy to github pages
+yarn global add vue-cli-ghpages
+
+vcg --message="Deploy new version of Recruitment Ipsum to Github Pages" --CNAME=recruitmentipsum.com
+```
+
 ## Licence
 
 Copyright 2018 Jeroen Ooms
