@@ -1,6 +1,6 @@
 # Recruitment Ipsum
 
-> Recruitment Ipsum is a Lorem Ipsum like generator based on real recruitment mails.
+> Recruitment Ipsum is a Lorem Ipsum like generator based on real recruitment mails. Check it out at [RecruitmentIpsum.com](https://recruitmentipsum.com/).
 
 The project is build with [Vue.js](http://vuejs.org)
 
