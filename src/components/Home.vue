@@ -104,11 +104,8 @@
         </div>
         <div v-if="ipsum.type === 'listitems'">
           <ul v-for="(content, index) in ipsum.content" :key="index">
-            <li
-              v-for="(group, subindex) in content.items"
-              v-bind:key="subindex"
-            >
-              {{ group.item }}
+            <li v-for="(item, subindex) in content" v-bind:key="subindex">
+              {{ item }}
             </li>
           </ul>
         </div>
@@ -126,6 +123,9 @@ export default {
       type: "sentences",
       language: "en",
       amount: 15,
+      minListItems: 4,
+      maxListItems: 7,
+      maxParagraphLength: 400,
       startwith: true,
       payoff: null,
       resultTitle: null,
@@ -159,56 +159,51 @@ export default {
 
       return newPayoff;
     },
+    suffleItems: function(items) {
+      return [...items.sort(() => 0.5 - Math.random())];
+    },
+    randomBetween: function(min, max) {
+      return Math.min(max, Math.floor(Math.random() * max + min));
+    },
     generateRecruitmentIpsum: function() {
       let result = { content: [], type: this.type };
-      let data;
       let items = [];
-      let randomCount;
+      let shuffled = [];
 
       // get content from the json file
-      data = this.json[this.language][this.type];
-
-      // create an array with random data that's long enough
-      while (items.length < this.amount * 8) {
-        items = items.concat(
-          data.sort(function() {
-            return 0.5 - Math.random();
-          })
-        );
-      }
+      items = this.json[this.language][this.type];
+      shuffled = this.suffleItems(items);
 
       // add start sentence when requested
       if (this.startwith) {
         this.type === "sentences"
-          ? items.unshift(this.json[this.language].startSentence)
-          : items.unshift(this.json[this.language].startListitem);
+          ? shuffled.unshift(this.json[this.language].startSentence)
+          : shuffled.unshift(this.json[this.language].startListitem);
       }
 
-      // generate that awesome recruitment ipsum
-      for (let i = 0; i < this.amount; i++) {
-        randomCount = Math.floor(Math.random() * 3 + 4);
-        result.content[i] = this.type === "sentences" ? "" : { items: [] };
-        for (let j = 0; j < randomCount; j++) {
-          // build paragraphs
-          if (this.type === "sentences") {
-            result.content[i] += items[0] + " ";
-            // build list items
-          } else {
-            result.content[i].items.push({ item: items[0] });
+      if (this.type === "sentences") {
+        // create paragraphs
+        while (result.content.length < this.amount) {
+          const lines = [];
+          while (lines.join(" ").length < this.maxParagraphLength) {
+            lines.push(shuffled.splice(0, 1));
           }
-          items.shift();
+          result.content.push(lines.join(" "));
 
-          // every paragraphs should be at least 350 charachters long
-          if (
-            j === randomCount - 1 &&
-            result.content[i].length < 350 &&
-            this.type === "sentences"
-          ) {
-            j--;
+          if (shuffled.length < 10) {
+            shuffled = this.suffleItems(items);
           }
-          // stop loop when a paragraph is longer than 400 characters
-          if (result.content[i].length > 400 && this.type === "sentences") {
-            j = randomCount;
+        }
+      } else {
+        // create lists
+        while (result.content.length < this.amount) {
+          const size = this.randomBetween(this.minListItems, this.maxListItems);
+          const listItems = shuffled.splice(0, size);
+
+          result.content.push(listItems);
+
+          if (shuffled.length < 10) {
+            shuffled = this.suffleItems(items);
           }
         }
       }
