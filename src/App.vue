@@ -11,6 +11,14 @@
           <ul>
             <li>
               <router-link
+                :to="{ name: 'Mail' }"
+                title="Mail generator for recruiters"
+                >Mail generator
+                <span class="long-about">for recruiters</span></router-link
+              >
+            </li>
+            <li>
+              <router-link
                 :to="{ name: 'About' }"
                 title="About Recruitment Ipsum"
                 >About
@@ -77,10 +85,6 @@ body {
   box-sizing: border-box;
 }
 
-*:focus {
-  outline: none;
-}
-
 a {
   color: #173e43;
   font-weight: bold;
@@ -102,10 +106,11 @@ blockquote {
 
 header {
   background-color: #173e43;
+  background: url("./assets/background.jpg");
+  background-size: cover;
+  height: 200px;
 
   @media (min-width: 900px) {
-    background: url("./assets/background.jpg");
-    background-size: cover;
     height: 500px;
   }
 }
@@ -123,6 +128,14 @@ nav {
     max-width: 900px;
   }
 
+  h1 {
+    font-size: 1rem;
+
+    @media (min-width: 900px) {
+      font-size: 1.5rem;
+    }
+  }
+
   h1,
   ul {
     color: #f1f1f1;
@@ -138,7 +151,25 @@ nav {
 
   ul {
     list-style: none;
+    font-size: 0.8em;
     padding: 0;
+
+    @media (min-width: 375px) {
+      display: flex;
+    }
+
+    li {
+      margin-left: 2em;
+      margin-bottom: 1em;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      @media (min-width: 375px) {
+        margin-bottom: 0;
+      }
+    }
 
     .long-about {
       display: none;

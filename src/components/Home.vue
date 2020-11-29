@@ -98,12 +98,12 @@
       <div class="container generated" v-if="ipsum">
         <h2>{{ resultTitle }}</h2>
         <div v-if="ipsum.type === 'sentences'">
-          <p v-for="(content, index) in ipsum.content" :key="index">
+          <p v-for="(content, index) in ipsum.output" :key="index">
             {{ content }}
           </p>
         </div>
         <div v-if="ipsum.type === 'listitems'">
-          <ul v-for="(content, index) in ipsum.content" :key="index">
+          <ul v-for="(content, index) in ipsum.output" :key="index">
             <li v-for="(item, subindex) in content" v-bind:key="subindex">
               {{ item }}
             </li>
@@ -159,51 +159,61 @@ export default {
 
       return newPayoff;
     },
-    suffleItems: function(items) {
+    shuffleItems: function(items) {
       return [...items.sort(() => 0.5 - Math.random())];
     },
     randomBetween: function(min, max) {
       return Math.min(max, Math.floor(Math.random() * max + min));
     },
     generateRecruitmentIpsum: function() {
-      let result = { content: [], type: this.type };
+      let result = { output: [], type: this.type };
       let items = [];
       let shuffled = [];
+      const content = this.json[this.language];
+
+      if (isNaN(this.amount) || this.amount < 1) this.amount = 1;
 
       // get content from the json file
-      items = this.json[this.language][this.type];
-      shuffled = this.suffleItems(items);
+      items =
+        this.type === "sentences"
+          ? [
+              ...content["sentences"],
+              ...content["openers"],
+              ...content["closers"],
+            ]
+          : content[this.type];
+      shuffled = this.shuffleItems(items);
 
       // add start sentence when requested
       if (this.startwith) {
         this.type === "sentences"
-          ? shuffled.unshift(this.json[this.language].startSentence)
-          : shuffled.unshift(this.json[this.language].startListitem);
+          ? shuffled.unshift(content.startSentence)
+          : shuffled.unshift(content.startListitem);
       }
 
       if (this.type === "sentences") {
         // create paragraphs
-        while (result.content.length < this.amount) {
+        while (result.output.length < this.amount) {
           const lines = [];
           while (lines.join(" ").length < this.maxParagraphLength) {
             lines.push(shuffled.splice(0, 1));
           }
-          result.content.push(lines.join(" "));
+          result.output.push(lines.join(" "));
 
           if (shuffled.length < 10) {
-            shuffled = this.suffleItems(items);
+            shuffled = this.shuffleItems(items);
           }
         }
       } else {
         // create lists
-        while (result.content.length < this.amount) {
+        while (result.output.length < this.amount) {
           const size = this.randomBetween(this.minListItems, this.maxListItems);
           const listItems = shuffled.splice(0, size);
 
-          result.content.push(listItems);
+          result.output.push(listItems);
 
           if (shuffled.length < 10) {
-            shuffled = this.suffleItems(items);
+            shuffled = this.shuffleItems(items);
           }
         }
       }
@@ -225,7 +235,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .generator {
   .generator-form {
     @media (min-width: 900px) {
@@ -438,7 +448,7 @@ export default {
 
     &:active {
       background-color: white;
-      border: 1px solid #3fb0ac;
+      border: 1px solid darken(#3fb0ac, 8);
       color: #3fb0ac;
     }
   }
