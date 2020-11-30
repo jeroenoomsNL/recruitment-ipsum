@@ -141,9 +141,9 @@ export default {
 
       while (newResultTitle === this.resultTitle) {
         index = Math.floor(
-          Math.random() * this.json.resultTitles[language].length
+          Math.random() * this.json[language].resultTitles.length
         );
-        newResultTitle = this.json.resultTitles[language][index];
+        newResultTitle = this.json[language].resultTitles[index];
       }
 
       return newResultTitle;
