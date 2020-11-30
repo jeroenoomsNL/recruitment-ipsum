@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "deploy": "vue-cli-service build && vcg --message=\"Deploy new version of Recruitment Ipsum to Github Pages\" --CNAME=recruitmentipsum.com",
+    "deploy": "vue-cli-service build --mode prod && vcg --message=\"Deploy new version of Recruitment Ipsum to Github Pages\" --CNAME=recruitmentipsum.com",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {

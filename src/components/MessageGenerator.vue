@@ -2,7 +2,7 @@
   <div class="generator page" id="generator">
     <div class="generator-form container">
       <h2 class="generator-heading">
-        <span>Generating recruitment mails has never been so easy!</span>
+        <span>Generating recruitment messages has never been so easy!</span>
       </h2>
       <p class="generator-explanation">
         There are millions of recruitment messages written in the last couple of

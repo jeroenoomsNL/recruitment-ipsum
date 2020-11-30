@@ -135,7 +135,7 @@ export default {
     this.payoff = this.json.payoffs[0];
   },
   methods: {
-    getResultTitle: function(language) {
+    getResultTitle(language) {
       let index;
       let newResultTitle = this.resultTitle;
 
@@ -148,7 +148,7 @@ export default {
 
       return newResultTitle;
     },
-    newPayoff: function() {
+    newPayoff() {
       let index;
       let newPayoff = this.payoff;
 
@@ -159,13 +159,13 @@ export default {
 
       return newPayoff;
     },
-    shuffleItems: function(items) {
+    shuffleItems(items) {
       return [...items.sort(() => 0.5 - Math.random())];
     },
-    randomBetween: function(min, max) {
+    randomBetween(min, max) {
       return Math.min(max, Math.floor(Math.random() * max + min));
     },
-    generateRecruitmentIpsum: function() {
+    generateRecruitmentIpsum() {
       let result = { output: [], type: this.type };
       let items = [];
       let shuffled = [];

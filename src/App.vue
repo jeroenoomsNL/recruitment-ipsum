@@ -11,10 +11,11 @@
           <ul>
             <li>
               <router-link
-                :to="{ name: 'Mail' }"
-                title="Mail generator for recruiters"
-                >Mail generator
-                <span class="long-about">for recruiters</span></router-link
+                :to="{ name: 'MessageGenerator' }"
+                title="Recruitment mail generator for recruiters"
+                >Message generator
+                <span class="long-link-text">for recruiters</span
+                ><span class="new-flag">new</span></router-link
               >
             </li>
             <li>
@@ -22,7 +23,9 @@
                 :to="{ name: 'About' }"
                 title="About Recruitment Ipsum"
                 >About
-                <span class="long-about">Recruitment Ipsum</span></router-link
+                <span class="long-link-text"
+                  >Recruitment Ipsum</span
+                ></router-link
               >
             </li>
           </ul>
@@ -158,8 +161,34 @@ nav {
       display: flex;
     }
 
+    a {
+      font-weight: normal;
+
+      .new-flag {
+        background: #fae596;
+        color: #173e43;
+        display: none;
+        font-size: 8px;
+        margin-left: 0.5em;
+        border-radius: 3px;
+        padding: 4px 2px 2px;
+        text-transform: uppercase;
+        line-height: 1;
+        font-family: Helvetica, sans-serif;
+        font-weight: normal;
+
+        @media (min-width: 900px) {
+          display: inline-block;
+        }
+      }
+
+      &.router-link-active {
+        font-weight: bold;
+      }
+    }
+
     li {
-      margin-left: 2em;
+      margin-left: 3em;
       margin-bottom: 1em;
 
       &:last-child {
@@ -171,7 +200,7 @@ nav {
       }
     }
 
-    .long-about {
+    .long-link-text {
       display: none;
 
       @media (min-width: 900px) {

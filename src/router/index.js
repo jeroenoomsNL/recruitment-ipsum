@@ -1,7 +1,7 @@
 import { createWebHistory, createRouter } from "vue-router";
 import Home from "@/components/Home.vue";
 import About from "@/components/About.vue";
-import Mail from "@/components/Mail.vue";
+import MessageGenerator from "@/components/MessageGenerator.vue";
 
 const routes = [
   {
@@ -10,9 +10,9 @@ const routes = [
     component: Home,
   },
   {
-    path: "/mail-generator",
-    name: "Mail",
-    component: Mail,
+    path: "/message-generator",
+    name: "MessageGenerator",
+    component: MessageGenerator,
   },
   {
     path: "/about",
