@@ -17,9 +17,7 @@ yarn serve
 yarn build
 
 # deploy to github pages
-yarn global add vue-cli-ghpages
-
-vcg --message="Deploy new version of Recruitment Ipsum to Github Pages" --CNAME=recruitmentipsum.com
+yarn deploy
 ```
 
 ## Licence
