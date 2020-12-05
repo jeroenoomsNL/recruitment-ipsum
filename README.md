@@ -1,31 +1,9 @@
 # Recruitment Ipsum
 
-> Recruitment Ipsum is a Lorem Ipsum like generator based on real recruitment mails. Check it out at [RecruitmentIpsum.com](https://recruitmentipsum.com/).
+> Recruitment Ipsum is a Lorem Ipsum like generator based on real recruitment messages that I've received in my e-mail or on Linkedin. Check it out at [RecruitmentIpsum.com](https://recruitmentipsum.com/).
 
 The project is build with [Vue.js](http://vuejs.org)
 
 ## Contribute
 
-```bash
-# install vue cli
-yarn global add @vue/cli
-
-# serve with hot reload at localhost:8080
-yarn serve
-
-# build for production with minification
-yarn build
-
-# deploy to github pages
-yarn deploy
-```
-
-## Licence
-
-Copyright 2018 Jeroen Ooms
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Please see the [CONTRIBUTING.md](docs/CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](docs/CODE_OF_CONDUCT.md).
