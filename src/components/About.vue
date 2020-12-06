@@ -60,25 +60,65 @@
       be used in Recruitment Ipsum ;-)
     </p>
 
-    <h2>Statistics</h2>
-    <div class="stats">
-      <div class="stat">
-        <span class="number">{{ numLines }}</span
-        ><span class="description">sentences</span>
+    <section>
+      <h2>Statistics</h2>
+
+      <p>
+        These are some statistics about the content that Recruitment Ipsum
+        contains.
+      </p>
+
+      <div class="stats">
+        <div class="stat">
+          <span class="number">{{ countLines() }}</span
+          ><span class="description">sentences</span>
+        </div>
+        <div class="stat">
+          <span class="number">{{ countWords() }}</span
+          ><span class="description">words</span>
+        </div>
+        <div class="stat">
+          <span class="number">{{ countListItems() }}</span
+          ><span class="description">list items</span>
+        </div>
+        <div class="stat">
+          <span class="number">{{ countStartsWithI() }}</span
+          ><span class="description">sentences starting with "I"</span>
+        </div>
+        <div class="stat">
+          <span class="number">{{ countQuestions() }}</span
+          ><span class="description">questions</span>
+        </div>
+        <div class="stat">
+          <span class="number">{{ countExclamationMarks() }}</span
+          ><span class="description">exclamation marks</span>
+        </div>
+        <div class="stat">
+          <span class="number">{{ countInteresting() }}</span
+          ><span class="description">"interesting" mentions </span>
+        </div>
+        <div class="stat">
+          <span class="number">{{ countYourProfile() }}</span
+          ><span class="description">"your profile" mentions</span>
+        </div>
+        <div class="stat">
+          <span class="number">{{ countOpportunities() }}</span
+          ><span class="description">"opportunity" mentions</span>
+        </div>
+        <div class="stat">
+          <span class="number">{{ countAboutCoffee() }}</span
+          ><span class="description">coffee mentions</span>
+        </div>
+        <div class="stat">
+          <span class="number">{{ countAboutAgile() }}</span
+          ><span class="description">agile mentions</span>
+        </div>
+        <div class="stat">
+          <span class="number">{{ countTesla() }}</span
+          ><span class="description">Tesla mentions</span>
+        </div>
       </div>
-      <div class="stat">
-        <span class="number">{{ numListItems }}</span
-        ><span class="description">list items</span>
-      </div>
-      <div class="stat">
-        <span class="number">{{ numReceived }}</span
-        ><span class="description">received messages</span>
-      </div>
-      <div class="stat">
-        <span class="number">{{ numReplied }}</span
-        ><span class="description">replied messages</span>
-      </div>
-    </div>
+    </section>
   </div>
 </template>
 
@@ -89,32 +129,113 @@ export default {
       json: require("../assets/content.json"),
     };
   },
-  created: function() {
-    this.numLines = this.countLines();
-    this.numListItems = this.countListItems();
-    this.numReplied = this.repliedRecruiters();
-    this.numReceived = this.receivedRecruiters();
-  },
   methods: {
-    countLines() {
-      return [
+    getContent(includesListItems) {
+      const content = [
         ...this.json["en"]["openers"],
         ...this.json["en"]["closers"],
         ...this.json["en"]["sentences"],
         ...this.json["nl"]["openers"],
         ...this.json["nl"]["closers"],
         ...this.json["nl"]["sentences"],
-      ].length;
+      ];
+
+      if (includesListItems) {
+        content.push(...this.json["nl"]["listitems"]);
+        content.push(...this.json["en"]["listitems"]);
+      }
+      return content;
+    },
+    countLines() {
+      const content = this.getContent();
+      return new Intl.NumberFormat("en").format(content.length);
     },
     countListItems() {
-      return [...this.json["en"]["listitems"], ...this.json["nl"]["listitems"]]
-        .length;
+      const count = [
+        ...this.json["en"]["listitems"],
+        ...this.json["nl"]["listitems"],
+      ].length;
+      return new Intl.NumberFormat("en").format(count);
     },
-    receivedRecruiters() {
-      return Math.round(this.numLines / 2);
+    countWords() {
+      const content = this.getContent(true);
+      const words = content.join(" ").split(" ");
+      return new Intl.NumberFormat("en").format(words.length);
     },
-    repliedRecruiters() {
-      return Math.round(this.numLines / 6);
+    countStartsWithI() {
+      const content = this.getContent(true);
+      const startsWithI = content.filter(
+        (sentence) => sentence.startsWith("I ") || sentence.startsWith("Ik ")
+      );
+      return new Intl.NumberFormat("en").format(startsWithI.length);
+    },
+    countAboutCoffee() {
+      const content = this.getContent(true);
+      const aboutCoffee = content.filter(
+        (sentence) =>
+          sentence.toLowerCase().includes("koffie") ||
+          sentence.toLowerCase().includes("coffee")
+      );
+      return new Intl.NumberFormat("en").format(aboutCoffee.length);
+    },
+    countQuestions() {
+      const content = this.getContent(true);
+      const question = content.filter((sentence) => sentence.includes("?"));
+      return new Intl.NumberFormat("en").format(question.length);
+    },
+    countExclamationMarks() {
+      const content = this.getContent(true);
+      const exclamation = content.filter((sentence) => sentence.includes("!"));
+      return new Intl.NumberFormat("en").format(exclamation.length);
+    },
+    countAboutAgile() {
+      const content = this.getContent(true);
+      const aboutAgile = content.filter(
+        (sentence) =>
+          sentence.toLowerCase().includes("agile") ||
+          sentence.toLowerCase().includes("scrum")
+      );
+      return new Intl.NumberFormat("en").format(aboutAgile.length);
+    },
+    countYourProfile() {
+      const content = this.getContent(true);
+      const yourProfile = content.filter(
+        (sentence) =>
+          sentence.toLowerCase().includes("your profile") ||
+          sentence.toLowerCase().includes("jouw profiel") ||
+          sentence.toLowerCase().includes("interesting profile") ||
+          sentence.toLowerCase().includes("interessant profiel")
+      );
+      return new Intl.NumberFormat("en").format(yourProfile.length);
+    },
+    countInteresting() {
+      const content = this.getContent(true);
+      const yourProfile = content.filter(
+        (sentence) =>
+          sentence.toLowerCase().includes("interesting") ||
+          sentence.toLowerCase().includes("interessant")
+      );
+      return new Intl.NumberFormat("en").format(yourProfile.length);
+    },
+    countOpportunities() {
+      const content = this.getContent(true);
+      const opportunities = content.filter(
+        (sentence) =>
+          sentence.toLowerCase().includes("opportunity") ||
+          sentence.toLowerCase().includes("opportunities") ||
+          sentence.toLowerCase().includes("challenge") ||
+          sentence.toLowerCase().includes("uitdaging") ||
+          sentence.toLowerCase().includes("mogelijkheid") ||
+          sentence.toLowerCase().includes("mogelijkheden")
+      );
+      return new Intl.NumberFormat("en").format(opportunities.length);
+    },
+    countTesla() {
+      const content = this.getContent(true);
+      const tesla = content.filter((sentence) =>
+        sentence.toLowerCase().includes("tesla")
+      );
+      return new Intl.NumberFormat("en").format(tesla.length);
     },
   },
 };
@@ -123,15 +244,26 @@ export default {
 <style lang="scss" scoped>
 .stats {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 2rem 0;
 
   .stat {
-    flex: 1 1 25%;
+    padding: 1rem;
+    border: 1px solid #3fb0ac;
+    flex: 0 0 30%;
+    margin-bottom: 2rem;
     text-align: center;
+    border-radius: 10px;
 
     .number {
       font-weight: bold;
       font-size: 2rem;
       display: block;
+    }
+
+    .description {
+      font-size: 0.9rem;
     }
   }
 }

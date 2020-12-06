@@ -210,6 +210,10 @@ nav {
   }
 }
 
+section {
+  margin: 4rem 0;
+}
+
 .page {
   @media (min-width: 900px) {
     margin-top: -250px;
