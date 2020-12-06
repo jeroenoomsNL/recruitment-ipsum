@@ -59,5 +59,80 @@
       you are a recruiter, feel free to contact me. But maybe your message will
       be used in Recruitment Ipsum ;-)
     </p>
+
+    <h2>Statistics</h2>
+    <div class="stats">
+      <div class="stat">
+        <span class="number">{{ numLines }}</span
+        ><span class="description">sentences</span>
+      </div>
+      <div class="stat">
+        <span class="number">{{ numListItems }}</span
+        ><span class="description">list items</span>
+      </div>
+      <div class="stat">
+        <span class="number">{{ numReceived }}</span
+        ><span class="description">received messages</span>
+      </div>
+      <div class="stat">
+        <span class="number">{{ numReplied }}</span
+        ><span class="description">replied messages</span>
+      </div>
+    </div>
   </div>
 </template>
+
+<script>
+export default {
+  data: function() {
+    return {
+      json: require("../assets/content.json"),
+    };
+  },
+  created: function() {
+    this.numLines = this.countLines();
+    this.numListItems = this.countListItems();
+    this.numReplied = this.repliedRecruiters();
+    this.numReceived = this.receivedRecruiters();
+  },
+  methods: {
+    countLines() {
+      return [
+        ...this.json["en"]["openers"],
+        ...this.json["en"]["closers"],
+        ...this.json["en"]["sentences"],
+        ...this.json["nl"]["openers"],
+        ...this.json["nl"]["closers"],
+        ...this.json["nl"]["sentences"],
+      ].length;
+    },
+    countListItems() {
+      return [...this.json["en"]["listitems"], ...this.json["nl"]["listitems"]]
+        .length;
+    },
+    receivedRecruiters() {
+      return Math.round(this.numLines / 2);
+    },
+    repliedRecruiters() {
+      return Math.round(this.numLines / 6);
+    },
+  },
+};
+</script>
+
+<style lang="scss" scoped>
+.stats {
+  display: flex;
+
+  .stat {
+    flex: 1 1 25%;
+    text-align: center;
+
+    .number {
+      font-weight: bold;
+      font-size: 2rem;
+      display: block;
+    }
+  }
+}
+</style>

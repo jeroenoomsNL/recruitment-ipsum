@@ -86,7 +86,8 @@
       "First of all I want to apologise for contacting you randomly out of the blue.",
       "I hope you are well.",
       "I hope you are well and that you are healthy and safe during these challenging times!",
-      "I assume you are receiving a lot of messages so I will try to get to the point here!"
+      "I assume you are receiving a lot of messages so I will try to get to the point here!",
+      "Hope you appreciate the direct approach."
     ],
     "closers": [
       "Either way lets have a chat?",
@@ -219,7 +220,11 @@
       "The holiday break is a time where a lot of people consider their situation, and decide they want a new challenge in the new year.",
       "I’ve got a whole bunch of different opportunities using frameworks including as React, Vue.js, Angular 2+ & Node.js – with clients in a range of sectors!",
       "Salaries range from €50-80K, and positions are available for all levels of seniority.",
-      "If wanting a change & a fresh start applies to you, get in touch! Or, if you know someone else thinking of making a switch, please let me know."
+      "If wanting a change & a fresh start applies to you, get in touch! Or, if you know someone else thinking of making a switch, please let me know.",
+      "Have been following your work, very impressed with your maturity and knowledge, they clearly stand out.",
+      "No world class product has been built without passionate engineers solving complex and seemingly impossible user problems, hence why I’m reaching out to you.",
+      "Originally a computer scientist, our CEO made the weird career decision to open a restaurant.",
+      "We know the industry inside out."
     ],
     "listitems": [
       "We build a variety of products from scratch",
@@ -253,9 +258,7 @@
       "Awesome offices in Amsterdam",
       "Chance to work with the latest tech including Serverless & Cloud",
       "Fast growing start-up in their industry",
-      "We know the industry inside out.",
-      "Have been following your work, very impressed with your maturity and knowledge, they clearly stand out.",
-      "No world class product has been built without passionate engineers solving complex and seemingly impossible user problems, hence why I’m reaching out to you."
+      "We know the industry inside out"
     ]
   },
   "nl": {
@@ -327,12 +330,28 @@
       "Rebecca",
       "Vivian",
       "Jolanda",
+      "Steven",
       "[Your name]",
       "[Name]",
       "[Name here]"
     ],
-    "openers": ["Hoe is het met je?"],
-    "closers": ["Hoe is het met je?"],
+    "openers": [
+      "Hoe is het met je?",
+      "Hoe gaat het?",
+      "Ik hoop dat alles goed met je gaat en dat je gezondheidstechnisch niet al te veel te lijden hebt onder het corona virus.",
+      "Ik zou het leuk vinden om met je te connecten, ik sta namelijk graag in contact met ervaren developers.",
+      "Dit keer geen copy paste openingsbericht van een recruiter maar een concrete vacature waarvan ik denk dat het een leuke volgende stap is in jouw carrière.",
+      "Krijg jij kippenvel van gelikte interfaces en supersmooth usability?"
+    ],
+    "closers": [
+      "Even vrijblijvend bellen?",
+      "Bij geen interesse hoor ik het ook graag.",
+      "Ik hoor graag van je!",
+      "Ik hoor het graag :)",
+      "Ik ben benieuwd wat je er van vindt!",
+      "Ben je niet geinteresseerd laat het dan vooral ook weten, dan zorg ik ervoor dat ik je niet meer lastig val en in dat geval biedt ik ook alvast mijn excuses aan voor deze ongewenste benadering.",
+      "Wellicht sta je er voor open om je ambities en deze rol nader te bespreken in een telefoongesprek?"
+    ],
     "sentences": [
       "Ik weet dat je me niet kent, maar zou jij misschien contact met me op kunnen nemen via onderstaand nummer?",
       "Voor een klant van mij ben ik op zoek naar een Front-End Developer. Sta jij hier voor open?",
@@ -703,12 +722,10 @@
       "Naast een toffe stack is de cultuuur echt gaaf.",
       "Ze werken in volledig autonome teams, waarbij het team de toolings bepaald.",
       "Daarbij krijg je voldoende tijd om nieuwe technieken eigen te maken met als doel om bulletproof software te bouwen.",
-      "Nu heb ik ook andere opdrachtgevers waarvan ik denk dat je er goed bij kan passen, maar voor nu wacht ik nog even jouw reactie af.",
       "Na de uitleg is er ook een workshop waarbij je de opgedane kennis gelijk kunt toepassen.",
       "Indien je geen interesse hebt in dergelijke meetups verneem ik het ook graag zodat ik je de volgende keer niet weer zal informeren.",
       "Tijdens mijn zoektocht kwam ik op je pagina terecht door de kennis en ervaring die je hebt opgedaan.",
       "Het lijkt me leuk om in contact te komen en te kijken waar je een mooie stap kan maken.",
-      "Bij geen interesse hoor ik het ook graag.",
       "Is het mogelijk om hier voor donderdag over te bellen? Zo kan ik meer informatie met je delen en kunnen we kijken of een kop koffie met de klant interessant zou kunnen zijn.",
       "Na een succesvolle lancering en recente investering zijn wij onze technologie en organisatie krachtig aan het schalen.",
       "Mocht je geïnteresseerd zijn in een nieuwe uitdaging dan zou ik graag met jou de rol van lead front-end developer bespreken.",
@@ -717,10 +734,56 @@
       "Mocht je interesse zijn gewekt dan maak ik graag kennis.",
       "Sta jij misschien open voor een nieuwe carriere stap en zou je interesse hebben deze te bespreken?",
       "Ben benieuwd of je open staat voor een nieuwe uitdaging.",
-      "Dit keer geen copy paste openingsbericht van een recruiter maar een concrete vacature waarvan ik denk dat het een leuke volgende stap is in jouw carrière.",
       "Hiervoor hebben ze op het moment 33 mensen in dienst hier in Nederland.",
       "Ze werken ook in de USA, UAE en Brazilië.",
-      "Ik stuur je de vacature en bedrijfspagina toe zodat je zelf ook even kan kijken."
+      "Ik stuur je de vacature en bedrijfspagina toe zodat je zelf ook even kan kijken.",
+      "Ik hoop dat alles goed met je gaat en dat je gezondheidstechnisch niet al te veel te lijden hebt onder het corona virus.",
+      "Nu heb je afgelopen week eindelijk mogen ondervinden hoe prettig het is om je reistijd tot een minimum te verkorten.",
+      "Laat dit je ook niet een beetje denken om uit de consultancy te stappen en lekker om de hoek aan de slag te gaan?",
+      "Nadat ik jouw profiel zo doornam moest ik direct aan mijn opdrachtgever denken.",
+      "Als je de buzzword bingo speelt dan doe jij het lekker enkel al op je skills en expertise.",
+      "Wat mij naast de buzzword ook enorm aanstaat is dat je al jaren werkt als een soort mentor en dit maakt de functie als lead frontend developer nog interessanter.",
+      "Ze werken in volledig autonome teams, waarbij het team de toolings bepaald.",
+      "Daarbij krijg je voldoende tijd om nieuwe technieken eigen te maken met als doel om bulletproof software te bouwen.",
+      "Nu heb ik ook andere opdrachtgevers waarvan ik denk dat je er goed bij kan passen, maar voor nu wacht ik nog even jouw reactie af.",
+      "Op basis van jouw LinkedIn profiel heb ik het vermoeden dat je mogelijk interesse hebt in het onderwerp dus bij deze zou ik je graag willen uitnodigen voor onze volgende meetup.",
+      "Ik zag namelijk nog geen Svelte tussen je indrukwekkende lijst aan vaardigheden staan.",
+      "Na de uitleg is er ook een workshop waarbij je de opgedane kennis gelijk kunt toepassen.",
+      "Ze helpen meer dan 60 klanten met digitale ontwikkeling.",
+      "Graag zou ik je eens willen spreken over deze functies, dus ik ben erg benieuwd of je hier wellicht voor open staat?",
+      "Op dit moment ben ik voor verschillende bedrijven bij jou in de buurt op zoek naar een goede developer.",
+      "Ik kwam jouw profiel tegen op LinkedIn en zie dat je al in een vergelijkbare functie werkt en je interesses overeen komen.",
+      "Word jij gek van een pixel die niet op juiste plek staat?",
+      "En wil je werken in een klein maar hecht, technisch team waarin creatieve en innovatieve ideeën worden aangemoedigd?",
+      "Dan zijn wij op zoek naar jou!",
+      "Tot slot hebben ze aangegeven een voorkeur te hebben voor een developer die open staat om te werken met nieuwe technieken en daar ook enthousiast over is.",
+      "Graag zou ik per telefoon verdere details met je bespreken.",
+      "Ik hoor graag wanneer dit schikt.",
+      "Mooi profiel heb je met waardevolle ervaringen, complimenten!",
+      "Heb je daarom deze of volgende week tijd om even kort te bellen?",
+      "Heb je interesse in een uitdaging?",
+      "Voor mijn opdracht gever, een corporate met een mooi klantportfolio in de bank-e n verzekeringssector, ben ik op zoek naar een managing consultant.",
+      "De ideale kandidaat heeft in het verleden ervaring opgedaan als IT ontwikkelaar, heeft voor een bank/verzekeraar gewerkt en heeft ervaring in de rol als managing consultant.",
+      "Al deze facetten zie ik terug in jouw profiel.",
+      "Tevens zijn er mooie stappen te maken naar principal consultant en VP, telkens binnen 2 a 3 jaar.",
+      "Als IT recruiter vergroot ik graag mijn netwerk binnen de IT, vandaar dat ik ook graag van jouw Linkedin activiteiten op de hoogte wil blijven.",
+      "Wellicht dat we nu of in de toekomst iets voor elkaar kunnen betekenen.",
+      "Deze organisatie groeit hard en opereert Internationaal, momenteel in 13 landen over de hele wereld.",
+      "Je gaat werken met de laatste technologieën.",
+      "Ben je beschikbaar?",
+      "Ik ben benieuwd of jij nog beschikbaar bent.",
+      "Op het moment ben ik daarnaast bezig met een marktanalyse.",
+      "Ik zie een goede match met jouw profiel.",
+      "Sta jij open om hier over te sparren?",
+      "Geheel vrijblijvend en oriënterend.",
+      "Wellicht leuk om eens vrijblijvend te bellen met oog op de toekomst?",
+      "In deze zelfsturende teams werk je hecht samen met mensen van verschillende disciplines.",
+      "Al doende leer je van collega's, en zij van jou.",
+      "Bovendien heeft de oplossing die jij en je team bedenken een grote impact voor verschillende grote klanten.",
+      "Naast opdrachten voor de klant is er bij Ordina veel tijd voor o.a. het volgen én geven van trainingen en gaan we vaak naar grote evenementen of op andere uitjes.",
+      "Gezien je profiel denk ik dat dit een goede volgende uitdaging voor je is.",
+      "Ik ben benieuwd wat voor jou belangrijk is bij een eventuele overstap.",
+      "Ik zou het er graag met je over hebben, hoe kan ik je hiervoor het beste bereiken?"
     ],
     "listitems": [
       "Je werkt samen met designers aan een grote webshop",
@@ -782,7 +845,11 @@
       "RxJS",
       "Communicatief sterk",
       "Voorbeeldrol voor anderen",
-      "Goede coaching/teaching skills"
+      "Goede coaching/teaching skills",
+      "Uren per week: 36-40",
+      "Dienstverband: Vast/Freelance ook mogelijk",
+      "Start: Z.S.M. (1 november zou ook kunnen)",
+      "Thuiswerken: Ja, 1 of maximaal 2 dagen per week"
     ]
   }
 }

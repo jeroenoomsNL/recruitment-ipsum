@@ -115,6 +115,8 @@
 </template>
 
 <script>
+import { shuffleItems, randomBetween } from "./utils";
+
 export default {
   data: function() {
     return {
@@ -159,12 +161,6 @@ export default {
 
       return newPayoff;
     },
-    shuffleItems(items) {
-      return [...items.sort(() => 0.5 - Math.random())];
-    },
-    randomBetween(min, max) {
-      return Math.min(max, Math.floor(Math.random() * max + min));
-    },
     generateRecruitmentIpsum() {
       let result = { output: [], type: this.type };
       let items = [];
@@ -182,7 +178,7 @@ export default {
               ...content["closers"],
             ]
           : content[this.type];
-      shuffled = this.shuffleItems(items);
+      shuffled = shuffleItems(items);
 
       // add start sentence when requested
       if (this.startwith) {
@@ -201,19 +197,19 @@ export default {
           result.output.push(lines.join(" "));
 
           if (shuffled.length < 10) {
-            shuffled = this.shuffleItems(items);
+            shuffled = shuffleItems(items);
           }
         }
       } else {
         // create lists
         while (result.output.length < this.amount) {
-          const size = this.randomBetween(this.minListItems, this.maxListItems);
+          const size = randomBetween(this.minListItems, this.maxListItems);
           const listItems = shuffled.splice(0, size);
 
           result.output.push(listItems);
 
           if (shuffled.length < 10) {
-            shuffled = this.shuffleItems(items);
+            shuffled = shuffleItems(items);
           }
         }
       }
@@ -450,32 +446,6 @@ export default {
       background-color: white;
       border: 1px solid darken(#3fb0ac, 8);
       color: #3fb0ac;
-    }
-  }
-
-  h2 {
-    font-size: 1.2em;
-    line-height: 1.6;
-    margin: 0 0 1em;
-
-    @media (min-width: 900px) {
-      font-size: 1.6em;
-    }
-  }
-
-  .generator-heading {
-    font-size: 1em;
-    font-weight: normal;
-    margin: 0 0 2em;
-    text-align: center;
-
-    @media (min-width: 900px) {
-      font-size: 1.5em;
-      font-weight: bold;
-
-      span {
-        display: block;
-      }
     }
   }
 }

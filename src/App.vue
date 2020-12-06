@@ -229,6 +229,40 @@ nav {
   }
 }
 
+h2 {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin: 0 0 1em;
+
+  @media (min-width: 900px) {
+    font-size: 1.6em;
+  }
+}
+
+.generator-heading {
+  font-size: 1.2rem;
+  margin-bottom: 1em;
+  text-align: left;
+
+  @media (min-width: 900px) {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+
+    span {
+      display: block;
+    }
+  }
+}
+
+.generator-explanation {
+  margin: 0 auto 2em;
+
+  @media (min-width: 900px) {
+    max-width: 90%;
+  }
+}
+
 footer {
   background: #173e43;
   color: white;

@@ -53,6 +53,8 @@
 </template>
 
 <script>
+import { shuffleItems, randomBetween } from "./utils";
+
 export default {
   data: function() {
     return {
@@ -83,48 +85,42 @@ export default {
 
       return newResultTitle;
     },
-    shuffleItems: function(items) {
-      return [...items.sort(() => 0.5 - Math.random())];
-    },
-    randomBetween: function(min, max) {
-      return Math.min(max, Math.floor(Math.random() * max + min));
-    },
     generateRecruitmentMail: function() {
       const content = this.json[this.language];
 
       // salutation
       const victimNames = this.victim
-        ? this.shuffleItems([
+        ? shuffleItems([
             ...content.names,
             ...Array(200).fill(this.victim),
             ...Array(10).fill(this.recruiter),
           ])
-        : this.shuffleItems(content.placeholderNames);
-      const salutations = this.shuffleItems(content.salutation);
+        : shuffleItems(content.placeholderNames);
+      const salutations = shuffleItems(content.salutation);
       const salutation = `${salutations[0]} ${victimNames[0]},`;
 
       // starter (98% change of seeing it)
       const showOpener = Math.random() < 0.98;
-      const opener = showOpener ? this.shuffleItems(content.openers)[0] : false;
+      const opener = showOpener ? shuffleItems(content.openers)[0] : false;
 
       // the message
-      const sentences = this.shuffleItems(content.sentences);
-      const size = this.randomBetween(this.minListItems, this.maxListItems);
+      const sentences = shuffleItems(content.sentences);
+      const size = randomBetween(this.minListItems, this.maxListItems);
       const message = sentences.splice(0, size).join(" ");
 
       // closer (98% change of seeing it)
       const showCloser = Math.random() < 0.98;
-      const closer = showCloser ? this.shuffleItems(content.closers)[0] : false;
+      const closer = showCloser ? shuffleItems(content.closers)[0] : false;
 
       // signoffs
       const recruiterName = this.recruiter
-        ? this.shuffleItems([
+        ? shuffleItems([
             ...content.names,
             ...Array(200).fill(this.recruiter),
             ...Array(10).fill(this.victim),
           ])[0]
-        : this.shuffleItems(content.placeholderNames)[0];
-      const signoff = this.shuffleItems(content.signoffs)[0];
+        : shuffleItems(content.placeholderNames)[0];
+      const signoff = shuffleItems(content.signoffs)[0];
 
       // set new recruitment ipsum to view
       this.resultTitle = this.getResultTitle(this.language);
@@ -187,17 +183,18 @@ export default {
 
     input {
       border: 1px solid #173e43;
-      height: 40px;
+      height: 60px;
       font-size: 18px;
       width: 250px;
       padding-left: 1em;
+      margin-bottom: 1em;
 
       &:not(:placeholder-shown) {
         padding-top: 1em;
       }
 
       @media (min-width: 900px) {
-        height: 60px;
+        margin-bottom: 0;
       }
     }
 
@@ -223,50 +220,19 @@ export default {
     font-weight: bold;
     height: 40px;
     text-align: center;
-    width: 140px;
+    width: 250px;
+    margin-bottom: 1em;
 
     @media (min-width: 900px) {
       height: 60px;
+      width: 140px;
+      margin-bottom: 0;
     }
 
     &:active {
       background-color: white;
       border: 1px solid #3fb0ac;
       color: #3fb0ac;
-    }
-  }
-
-  h2 {
-    font-size: 1.2em;
-    line-height: 1.6;
-    margin: 0 0 1em;
-
-    @media (min-width: 900px) {
-      font-size: 1.6em;
-    }
-  }
-
-  .generator-heading {
-    font-size: 1em;
-    font-weight: normal;
-    margin-bottom: 1em;
-    text-align: center;
-
-    @media (min-width: 900px) {
-      font-size: 1.5em;
-      font-weight: bold;
-
-      span {
-        display: block;
-      }
-    }
-  }
-
-  .generator-explanation {
-    margin: 0 auto 2em;
-
-    @media (min-width: 900px) {
-      max-width: 90%;
     }
   }
 }
