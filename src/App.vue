@@ -132,10 +132,11 @@ nav {
   }
 
   h1 {
-    font-size: 1rem;
+    font-size: 1.4rem;
+    font-family: "Caveat", sans-serif;
 
     @media (min-width: 900px) {
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
   }
 
@@ -157,7 +158,7 @@ nav {
     font-size: 0.8em;
     padding: 0;
 
-    @media (min-width: 375px) {
+    @media (min-width: 400px) {
       display: flex;
     }
 
@@ -188,15 +189,19 @@ nav {
     }
 
     li {
-      margin-left: 3em;
-      margin-bottom: 1em;
+      margin-left: 1rem;
+      margin-bottom: 1rem;
 
       &:last-child {
         margin-bottom: 0;
       }
 
-      @media (min-width: 375px) {
+      @media (min-width: 400px) {
         margin-bottom: 0;
+      }
+
+      @media (min-width: 900px) {
+        margin-left: 3rem;
       }
     }
 
