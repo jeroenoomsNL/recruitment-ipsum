@@ -70,12 +70,12 @@
 
       <div class="stats">
         <div class="stat">
-          <span class="number">{{ countLines() }}</span
-          ><span class="description">sentences</span>
-        </div>
-        <div class="stat">
           <span class="number">{{ countWords() }}</span
           ><span class="description">words</span>
+        </div>
+        <div class="stat">
+          <span class="number">{{ countLines() }}</span
+          ><span class="description">sentences</span>
         </div>
         <div class="stat">
           <span class="number">{{ countListItems() }}</span
@@ -86,35 +86,59 @@
           ><span class="description">sentences starting with "I"</span>
         </div>
         <div class="stat">
-          <span class="number">{{ countQuestions() }}</span
+          <span class="number">{{ countWordsInContent(["?"]) }}</span
           ><span class="description">questions</span>
         </div>
         <div class="stat">
-          <span class="number">{{ countExclamationMarks() }}</span
+          <span class="number">{{ countWordsInContent(["!"]) }}</span
           ><span class="description">exclamation marks</span>
         </div>
         <div class="stat">
-          <span class="number">{{ countInteresting() }}</span
+          <span class="number">{{
+            countWordsInContent(["interesting", "interessant"])
+          }}</span
           ><span class="description">"interesting" mentions </span>
         </div>
         <div class="stat">
-          <span class="number">{{ countYourProfile() }}</span
+          <span class="number">{{
+            countWordsInContent([
+              "your profile",
+              "interesting profile",
+              "je profiel",
+              "jouw profiel",
+              "interessant profiel",
+            ])
+          }}</span
           ><span class="description">"your profile" mentions</span>
         </div>
         <div class="stat">
-          <span class="number">{{ countOpportunities() }}</span
+          <span class="number">{{
+            countWordsInContent([
+              "opportunity",
+              "opportunities",
+              "challenge",
+              "challenges",
+              "uitdaging",
+              "mogelijkheid",
+              "mogelijkheden",
+            ])
+          }}</span
           ><span class="description">"opportunity" mentions</span>
         </div>
         <div class="stat">
-          <span class="number">{{ countAboutCoffee() }}</span
+          <span class="number">{{
+            countWordsInContent(["coffee", "koffie"])
+          }}</span
           ><span class="description">coffee mentions</span>
         </div>
         <div class="stat">
-          <span class="number">{{ countAboutAgile() }}</span
+          <span class="number">{{
+            countWordsInContent(["scrum", "agile"])
+          }}</span
           ><span class="description">agile mentions</span>
         </div>
         <div class="stat">
-          <span class="number">{{ countTesla() }}</span
+          <span class="number">{{ countWordsInContent(["tesla"]) }}</span
           ><span class="description">Tesla mentions</span>
         </div>
       </div>
@@ -130,7 +154,7 @@ export default {
     };
   },
   methods: {
-    getContent(includesListItems) {
+    getContent(options) {
       const content = [
         ...this.json["en"]["openers"],
         ...this.json["en"]["closers"],
@@ -140,11 +164,23 @@ export default {
         ...this.json["nl"]["sentences"],
       ];
 
-      if (includesListItems) {
+      if (options?.listitems) {
         content.push(...this.json["nl"]["listitems"]);
         content.push(...this.json["en"]["listitems"]);
       }
       return content;
+    },
+    countWordsInContent(queries) {
+      const content = this.getContent({ listitems: true });
+      const matches = content.filter((sentence) => {
+        let match = false;
+        queries.forEach((query) => {
+          if (sentence.toLowerCase().includes(query.toLowerCase()))
+            match = true;
+        });
+        return match;
+      });
+      return new Intl.NumberFormat("en").format(matches.length);
     },
     countLines() {
       const content = this.getContent();
@@ -158,84 +194,16 @@ export default {
       return new Intl.NumberFormat("en").format(count);
     },
     countWords() {
-      const content = this.getContent(true);
+      const content = this.getContent({ listitems: true });
       const words = content.join(" ").split(" ");
       return new Intl.NumberFormat("en").format(words.length);
     },
     countStartsWithI() {
-      const content = this.getContent(true);
+      const content = this.getContent({ listitems: true });
       const startsWithI = content.filter(
         (sentence) => sentence.startsWith("I ") || sentence.startsWith("Ik ")
       );
       return new Intl.NumberFormat("en").format(startsWithI.length);
-    },
-    countAboutCoffee() {
-      const content = this.getContent(true);
-      const aboutCoffee = content.filter(
-        (sentence) =>
-          sentence.toLowerCase().includes("koffie") ||
-          sentence.toLowerCase().includes("coffee")
-      );
-      return new Intl.NumberFormat("en").format(aboutCoffee.length);
-    },
-    countQuestions() {
-      const content = this.getContent(true);
-      const question = content.filter((sentence) => sentence.includes("?"));
-      return new Intl.NumberFormat("en").format(question.length);
-    },
-    countExclamationMarks() {
-      const content = this.getContent(true);
-      const exclamation = content.filter((sentence) => sentence.includes("!"));
-      return new Intl.NumberFormat("en").format(exclamation.length);
-    },
-    countAboutAgile() {
-      const content = this.getContent(true);
-      const aboutAgile = content.filter(
-        (sentence) =>
-          sentence.toLowerCase().includes("agile") ||
-          sentence.toLowerCase().includes("scrum")
-      );
-      return new Intl.NumberFormat("en").format(aboutAgile.length);
-    },
-    countYourProfile() {
-      const content = this.getContent(true);
-      const yourProfile = content.filter(
-        (sentence) =>
-          sentence.toLowerCase().includes("your profile") ||
-          sentence.toLowerCase().includes("jouw profiel") ||
-          sentence.toLowerCase().includes("interesting profile") ||
-          sentence.toLowerCase().includes("interessant profiel")
-      );
-      return new Intl.NumberFormat("en").format(yourProfile.length);
-    },
-    countInteresting() {
-      const content = this.getContent(true);
-      const yourProfile = content.filter(
-        (sentence) =>
-          sentence.toLowerCase().includes("interesting") ||
-          sentence.toLowerCase().includes("interessant")
-      );
-      return new Intl.NumberFormat("en").format(yourProfile.length);
-    },
-    countOpportunities() {
-      const content = this.getContent(true);
-      const opportunities = content.filter(
-        (sentence) =>
-          sentence.toLowerCase().includes("opportunity") ||
-          sentence.toLowerCase().includes("opportunities") ||
-          sentence.toLowerCase().includes("challenge") ||
-          sentence.toLowerCase().includes("uitdaging") ||
-          sentence.toLowerCase().includes("mogelijkheid") ||
-          sentence.toLowerCase().includes("mogelijkheden")
-      );
-      return new Intl.NumberFormat("en").format(opportunities.length);
-    },
-    countTesla() {
-      const content = this.getContent(true);
-      const tesla = content.filter((sentence) =>
-        sentence.toLowerCase().includes("tesla")
-      );
-      return new Intl.NumberFormat("en").format(tesla.length);
     },
   },
 };
@@ -258,12 +226,22 @@ export default {
 
     .number {
       font-weight: bold;
-      font-size: 2rem;
+      font-size: 1.4rem;
       display: block;
+      margin-bottom: 0.5rem;
+
+      @media (min-width: 900px) {
+        font-size: 2rem;
+      }
     }
 
     .description {
-      font-size: 0.9rem;
+      font-size: 0.7rem;
+      display: block;
+
+      @media (min-width: 900px) {
+        font-size: 0.9rem;
+      }
     }
   }
 }
