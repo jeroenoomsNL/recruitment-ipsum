@@ -115,7 +115,7 @@
 </template>
 
 <script>
-import { shuffleItems, randomBetween } from "./utils";
+import { shuffleItems, randomBetween, newItemFromArray } from "./utils";
 
 export default {
   data: function() {
@@ -138,28 +138,13 @@ export default {
   },
   methods: {
     getResultTitle(language) {
-      let index;
-      let newResultTitle = this.resultTitle;
-
-      while (newResultTitle === this.resultTitle) {
-        index = Math.floor(
-          Math.random() * this.json[language].resultTitles.length
-        );
-        newResultTitle = this.json[language].resultTitles[index];
-      }
-
-      return newResultTitle;
+      return newItemFromArray(
+        this.json[language].resultTitles,
+        this.resultTitle
+      );
     },
     newPayoff() {
-      let index;
-      let newPayoff = this.payoff;
-
-      while (newPayoff === this.payoff) {
-        index = Math.floor(Math.random() * this.json.payoffs.length);
-        newPayoff = this.json.payoffs[index];
-      }
-
-      return newPayoff;
+      return newItemFromArray(this.json.payoffs, this.payoff);
     },
     generateRecruitmentIpsum() {
       let result = { output: [], type: this.type };
@@ -222,7 +207,7 @@ export default {
       var VueScrollTo = require("vue-scrollto");
       VueScrollTo.scrollTo("#result", 500, {
         easing: "ease-out",
-        offset: -60,
+        offset: -250,
         x: false,
         y: true,
       });

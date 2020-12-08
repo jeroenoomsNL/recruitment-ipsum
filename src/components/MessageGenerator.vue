@@ -53,7 +53,7 @@
 </template>
 
 <script>
-import { shuffleItems, randomBetween } from "./utils";
+import { shuffleItems, randomBetween, newItemFromArray } from "./utils";
 
 export default {
   data: function() {
@@ -72,18 +72,11 @@ export default {
     this.payoff = this.json.payoffs[0];
   },
   methods: {
-    getResultTitle: function(language) {
-      let index;
-      let newResultTitle = this.resultTitle;
-
-      while (newResultTitle === this.resultTitle) {
-        index = Math.floor(
-          Math.random() * this.json[language].resultMailTitles.length
-        );
-        newResultTitle = this.json[language].resultMailTitles[index];
-      }
-
-      return newResultTitle;
+    getResultTitle(language) {
+      return newItemFromArray(
+        this.json[language].resultTitles,
+        this.resultTitle
+      );
     },
     generateRecruitmentMail: function() {
       const content = this.json[this.language];

@@ -64,7 +64,7 @@
       <h2>Statistics</h2>
 
       <p>
-        These are some statistics about the content that Recruitment Ipsum
+        Here are some statistics about the content that Recruitment Ipsum
         contains.
       </p>
 
