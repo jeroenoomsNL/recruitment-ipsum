@@ -328,6 +328,7 @@ export default {
 
     input {
       border: 1px solid #173e43;
+      border-radius: 5px;
       height: 40px;
       font-size: 18px;
       text-align: center;
@@ -367,16 +368,17 @@ export default {
     .checkbox {
       align-items: center;
       border: 1px solid #173e43;
+      border-radius: 5px;
       display: flex;
       height: 20px;
       justify-content: center;
-      font-size: 0.8em;
+      font-size: 0.6em;
       margin-right: 10px;
       width: 20px;
 
       @media (min-width: 900px) {
-        height: 30px;
-        width: 30px;
+        height: 24px;
+        width: 24px;
       }
     }
   }
@@ -410,6 +412,7 @@ export default {
     label {
       align-items: center;
       border: 1px solid #173e43;
+      border-radius: 5px;
       cursor: pointer;
       display: flex;
       font-size: 0.8em;
@@ -430,6 +433,7 @@ export default {
   button {
     background-color: #3fb0ac;
     border: 1px solid darken(#3fb0ac, 8);
+    border-radius: 5px;
     color: white;
     cursor: pointer;
     font-size: 18px;

@@ -183,6 +183,7 @@ export default {
 
     input {
       border: 1px solid #173e43;
+      border-radius: 5px;
       height: 60px;
       font-size: 18px;
       width: 250px;
@@ -214,6 +215,7 @@ export default {
   button {
     background-color: #3fb0ac;
     border: 1px solid darken(#3fb0ac, 8);
+    border-radius: 5px;
     color: white;
     cursor: pointer;
     font-size: 18px;
