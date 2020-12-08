@@ -81,7 +81,7 @@ export default {
     generateRecruitmentMail: function() {
       const content = this.json[this.language];
 
-      // salutation
+      // salutation, shuffle real name with fake names
       const victimNames = this.victim
         ? shuffleItems([
             ...content.names,
@@ -92,8 +92,8 @@ export default {
       const salutations = shuffleItems(content.salutation);
       const salutation = `${salutations[0]} ${victimNames[0]},`;
 
-      // starter (98% change of seeing it)
-      const showOpener = Math.random() < 0.98;
+      // starter (95% change of seeing it)
+      const showOpener = Math.random() < 0.95;
       const opener = showOpener ? shuffleItems(content.openers)[0] : false;
 
       // the message
@@ -101,11 +101,11 @@ export default {
       const size = randomBetween(this.minListItems, this.maxListItems);
       const message = sentences.splice(0, size).join(" ");
 
-      // closer (98% change of seeing it)
-      const showCloser = Math.random() < 0.98;
+      // closer (95% change of seeing it)
+      const showCloser = Math.random() < 0.95;
       const closer = showCloser ? shuffleItems(content.closers)[0] : false;
 
-      // signoffs
+      // signoffs, shuffle real name with fake names
       const recruiterName = this.recruiter
         ? shuffleItems([
             ...content.names,

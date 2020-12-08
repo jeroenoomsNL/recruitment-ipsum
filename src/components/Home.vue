@@ -147,23 +147,13 @@ export default {
       return newItemFromArray(this.json.payoffs, this.payoff);
     },
     generateRecruitmentIpsum() {
-      let result = { output: [], type: this.type };
-      let items = [];
-      let shuffled = [];
+      const result = { output: [], type: this.type };
       const content = this.json[this.language];
+      const items = content[this.type];
+      let shuffled = shuffleItems(items);
 
+      // handle invalid amount
       if (isNaN(this.amount) || this.amount < 1) this.amount = 1;
-
-      // get content from the json file
-      items =
-        this.type === "sentences"
-          ? [
-              ...content["sentences"],
-              ...content["openers"],
-              ...content["closers"],
-            ]
-          : content[this.type];
-      shuffled = shuffleItems(items);
 
       // add start sentence when requested
       if (this.startwith) {
@@ -176,9 +166,11 @@ export default {
         // create paragraphs
         while (result.output.length < this.amount) {
           const lines = [];
+
           while (lines.join(" ").length < this.maxParagraphLength) {
             lines.push(shuffled.splice(0, 1));
           }
+
           result.output.push(lines.join(" "));
 
           if (shuffled.length < 10) {
