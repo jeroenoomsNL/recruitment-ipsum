@@ -22,6 +22,7 @@
                 min="1"
                 max="999"
               />
+              <label>Amount</label>
             </div>
           </div>
           <div class="column">
@@ -301,20 +302,38 @@ export default {
   }
 
   .form-input {
+    position: relative;
     text-align: right;
 
     input {
       border: 1px solid #173e43;
       border-radius: 5px;
-      height: 40px;
       font-size: 18px;
       text-align: center;
       width: 60px;
+      height: 60px;
+
+      &:not(:placeholder-shown) {
+        padding-top: 1em;
+      }
 
       @media (min-width: 900px) {
-        height: 60px;
-        width: 80px;
+        width: 100%;
       }
+    }
+
+    label {
+      display: none;
+    }
+
+    input:not(:placeholder-shown) + label {
+      display: block;
+      width: 100%;
+      font-size: 10px;
+      position: absolute;
+      text-align: center;
+      left: 0;
+      top: 6px;
     }
   }
 
