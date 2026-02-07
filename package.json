@@ -8,7 +8,7 @@
     "serve": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "vite build && vcg --message=\"Deploy new version of Recruitment Ipsum to Github Pages\" --CNAME=recruitmentipsum.com",
+    "deploy": "vite build && gh-pages -d dist -m 'Deploy new version of Recruitment Ipsum to Github Pages'",
     "lint": "eslint . --ext .vue,.js --fix"
   },
   "dependencies": {
@@ -19,6 +19,7 @@
     "@vitejs/plugin-vue": "^5.2.1",
     "eslint": "^8.57.1",
     "eslint-plugin-vue": "^9.31.0",
+    "gh-pages": "^6.3.0",
     "sass": "^1.83.2",
     "vite": "^6.0.5"
   },
