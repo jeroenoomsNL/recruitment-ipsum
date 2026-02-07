@@ -13,5 +13,5 @@ export default defineConfig({
   server: {
     port: 8080,
   },
-  base: "/",
+  base: process.env.NODE_ENV === "production" ? "/recruitment-ipsum/" : "/",
 });
