@@ -54,11 +54,12 @@
 
 <script>
 import { shuffleItems, randomBetween, newItemFromArray } from "./utils";
+import contentJson from "../assets/content.json";
 
 export default {
-  data: function() {
+  data: function () {
     return {
-      json: require("../assets/content.json"),
+      json: contentJson,
       language: "en",
       recruiter: null,
       victim: null,
@@ -68,17 +69,17 @@ export default {
       resultTitle: null,
     };
   },
-  created: function() {
+  created: function () {
     this.payoff = this.json.payoffs[0];
   },
   methods: {
     getResultTitle(language) {
       return newItemFromArray(
         this.json[language].resultTitles,
-        this.resultTitle
+        this.resultTitle,
       );
     },
-    generateRecruitmentMail: function() {
+    generateRecruitmentMail: function () {
       const content = this.json[this.language];
 
       // salutation, shuffle real name with fake names
@@ -130,12 +131,14 @@ export default {
       };
 
       // scroll to result container
-      var VueScrollTo = require("vue-scrollto");
-      VueScrollTo.scrollTo("#result", 500, {
-        easing: "ease-out",
-        offset: -160,
-        x: false,
-        y: true,
+      this.$nextTick(() => {
+        const element = document.querySelector("#result");
+        if (element) {
+          const offset = -160;
+          const y =
+            element.getBoundingClientRect().top + window.pageYOffset + offset;
+          window.scrollTo({ top: y, behavior: "smooth" });
+        }
       });
     },
   },
@@ -143,6 +146,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@use "sass:color";
+
 .generator {
   .generator-form {
     @media (min-width: 900px) {
@@ -207,7 +212,7 @@ export default {
 
   button {
     background-color: #3fb0ac;
-    border: 1px solid darken(#3fb0ac, 8);
+    border: 1px solid color.adjust(#3fb0ac, $lightness: -8%);
     border-radius: 5px;
     color: white;
     cursor: pointer;

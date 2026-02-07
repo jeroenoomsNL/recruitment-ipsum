@@ -147,10 +147,12 @@
 </template>
 
 <script>
+import contentJson from "../assets/content.json";
+
 export default {
-  data: function() {
+  data: function () {
     return {
-      json: require("../assets/content.json"),
+      json: contentJson,
     };
   },
   methods: {
@@ -201,7 +203,7 @@ export default {
     countStartsWithI() {
       const content = this.getContent({ listitems: true });
       const startsWithI = content.filter(
-        (sentence) => sentence.startsWith("I ") || sentence.startsWith("Ik ")
+        (sentence) => sentence.startsWith("I ") || sentence.startsWith("Ik "),
       );
       return new Intl.NumberFormat("en").format(startsWithI.length);
     },

@@ -74,6 +74,8 @@ export default {
 </script>
 
 <style lang="scss">
+@use "sass:color";
+
 body {
   background: #dddfd4;
   color: #173e43;
@@ -99,7 +101,10 @@ h2 {
 }
 
 blockquote {
-  font-family: Georgia, Source Serif Pro, serif;
+  font-family:
+    Georgia,
+    Source Serif Pro,
+    serif;
   font-style: italic;
   font-size: 1.2em;
   max-width: 70%;
@@ -120,7 +125,7 @@ header {
 
 nav {
   background-color: #3fb0ac;
-  border-bottom: 1px solid darken(#3fb0ac, 8);
+  border-bottom: 1px solid color.adjust(#3fb0ac, $lightness: -8%);
 
   .nav-wrapper {
     align-items: center;

@@ -2,40 +2,40 @@
   "name": "recruitment-ipsum",
   "version": "3.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "deploy": "vue-cli-service build --mode prod && vcg --message=\"Deploy new version of Recruitment Ipsum to Github Pages\" --CNAME=recruitmentipsum.com",
-    "lint": "vue-cli-service lint"
+    "dev": "vite",
+    "serve": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "vite build && vcg --message=\"Deploy new version of Recruitment Ipsum to Github Pages\" --CNAME=recruitmentipsum.com",
+    "lint": "eslint . --ext .vue,.js --fix"
   },
   "dependencies": {
-    "core-js": "^3.6.5",
-    "vue": "^3.0.0",
-    "vue-router": "^4.0.0-rc.5",
-    "vue-scrollto": "^2.20.0"
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
-    "@vue/compiler-sfc": "^3.0.0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^7.0.0-0",
-    "sass": "^1.29.0",
-    "sass-loader": "^10.1.0"
+    "@vitejs/plugin-vue": "^5.2.1",
+    "eslint": "^8.57.1",
+    "eslint-plugin-vue": "^9.31.0",
+    "sass": "^1.83.2",
+    "vite": "^6.0.5"
   },
   "eslintConfig": {
     "root": true,
     "env": {
-      "node": true
+      "node": true,
+      "browser": true,
+      "es2022": true
     },
     "extends": [
-      "plugin:vue/vue3-essential",
+      "plugin:vue/vue3-recommended",
       "eslint:recommended"
     ],
     "parserOptions": {
-      "parser": "babel-eslint"
+      "ecmaVersion": "latest",
+      "sourceType": "module"
     },
     "rules": {}
   },
