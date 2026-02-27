@@ -13,15 +13,15 @@
   },
   "dependencies": {
     "vue": "^3.5.29",
-    "vue-router": "^4.5.0"
+    "vue-router": "^4.6.4"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^5.2.1",
+    "@vitejs/plugin-vue": "^5.2.4",
     "eslint": "^9.39.3",
-    "eslint-plugin-vue": "^9.31.0",
+    "eslint-plugin-vue": "^9.33.0",
     "gh-pages": "^6.3.0",
-    "sass": "^1.83.2",
-    "vite": "^6.0.5"
+    "sass": "^1.97.3",
+    "vite": "^6.4.1"
   },
   "eslintConfig": {
     "root": true,
