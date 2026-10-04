@@ -76,18 +76,11 @@ export function greeting(content, name, random = Math.random) {
   return name ? `${salutation} ${name},` : `${salutation},`;
 }
 
-function pickGreetingStyle(hasName, random) {
-  const roll = random();
-  // with a name it's usually right, without one anything goes
-  if (hasName) return roll < 0.8 ? "name" : roll < 0.9 ? "wrongName" : "placeholder";
-  return roll < 0.4 ? "none" : roll < 0.75 ? "placeholder" : "wrongName";
-}
-
 /**
  * Mixes the given name into a pool of random names, so it shows up most of
- * the time, but not always.
+ * the time, but not always. Recruiters get names wrong too.
  */
-function pickSignature(name, otherName, content, random) {
+function pickName(name, otherName, content, random) {
   if (!name) return pick(content.placeholderNames, random);
   const pool = [
     ...content.names,
@@ -108,18 +101,14 @@ export function generateMail(
   const sentences = shuffle(content.sentences, random);
 
   return {
-    salutation: greeting(
-      content,
-      greetingName(content, pickGreetingStyle(Boolean(toName), random), toName, random),
-      random,
-    ),
+    salutation: greeting(content, pickName(toName, fromName, content, random), random),
     opener: random() < 0.95 ? pick(content.openers, random) : null,
     message: sentences
       .slice(0, randomInt(MIN_LIST_ITEMS, MAX_LIST_ITEMS, random))
       .join(" "),
     closer: random() < 0.95 ? pick(content.closers, random) : null,
     signoff: pick(content.signoffs, random),
-    signature: pickSignature(fromName, toName, content, random),
+    signature: pickName(fromName, toName, content, random),
   };
 }
 

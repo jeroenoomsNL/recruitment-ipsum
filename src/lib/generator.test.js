@@ -99,26 +99,4 @@ describe("greetings", () => {
     );
     expect(corpus.names).toContain(greetingName(corpus, "wrongName", "Ada"));
   });
-
-  it("mixes greetings when no name is given", () => {
-    const salutations = Array.from(
-      { length: 300 },
-      () => generateMail(corpus).salutation,
-    );
-    const plain = salutations.filter((s) => !s.includes(" ") || corpus.salutations.includes(s.slice(0, -1)));
-    const placeholder = salutations.filter((s) =>
-      corpus.placeholderNames.some((name) => s.endsWith(` ${name},`)),
-    );
-    expect(plain.length).toBeGreaterThan(0);
-    expect(placeholder.length).toBeGreaterThan(0);
-    expect(plain.length + placeholder.length).toBeLessThan(300);
-  });
-
-  it("mostly uses the given name", () => {
-    const named = Array.from({ length: 300 }, () =>
-      generateMail(corpus, { to: "Ada" }).salutation,
-    ).filter((s) => s.endsWith(" Ada,"));
-    expect(named.length).toBeGreaterThan(180);
-    expect(named.length).toBeLessThan(300);
-  });
 });
