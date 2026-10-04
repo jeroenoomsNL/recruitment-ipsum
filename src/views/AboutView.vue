@@ -30,15 +30,15 @@ const totals = [
           developers are hot, they say…
         </p>
         <p>
-          After a couple of years I realised I still had all those messages in
+          After a couple of years I realized I still had all those messages in
           my inbox. Some of them are absolutely brilliant! So I turned them
           into a placeholder text generator, just like
           <a href="https://lipsum.com">Lorem Ipsum</a>. Designers and
           developers use it when they don't have all the content they need yet.
         </p>
         <p>
-          The text is taken from the recruitment messages I received, by e-mail
-          and LinkedIn. I didn't change a thing. I only removed the names of
+          The text is taken from the recruitment messages I received by e-mail
+          and on LinkedIn. I didn't change a thing. I only removed the names of
           companies and recruiters, and left the typos for extra entertainment.
           The generator shuffles the sentences, with awesome results like:
         </p>
@@ -49,8 +49,8 @@ const totals = [
           of skills like yours?
         </blockquote>
         <p>
-          I received some beauties in Dutch as well, so there's a Dutch version
-          too:
+          I received some beauties in Dutch as well, so there's also a Dutch
+          version:
         </p>
         <blockquote lang="nl">
           Recruitment ipsum ik weet dat je me niet kent, maar zou jij misschien
@@ -61,6 +61,9 @@ const totals = [
           I hope you enjoy Recruitment Ipsum, even if you are a recruiter. And
           if you are, feel free to contact me. Just know that your message
           might end up in here. ;-)
+        </p>
+        <p class="signature">
+          Jeroen
         </p>
       </div>
 
@@ -115,6 +118,14 @@ const totals = [
 .story {
   max-width: 64ch;
   font-size: 1.125rem;
+}
+
+.signature {
+  margin-top: 1.5em;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: -0.02em;
 }
 
 blockquote {

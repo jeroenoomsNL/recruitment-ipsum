@@ -64,10 +64,10 @@ generate();
         <p class="eyebrow unread">
           Inbox · {{ unread }} unread
         </p>
-        <h1>Lorem ipsum, ghostwritten by recruiters.</h1>
+        <h1>Lorem Ipsum, ghostwritten by recruiters.</h1>
         <p class="lead">
           Placeholder text made from real recruitment messages, received by
-          e-mail and LinkedIn over more than ten years. Names removed, typos
+          e-mail and on LinkedIn over more than ten years. Names removed, typos
           kept.
         </p>
         <button
