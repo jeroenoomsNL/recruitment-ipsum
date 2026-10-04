@@ -227,9 +227,9 @@ generate();
 .stepper {
   display: inline-flex;
   align-items: center;
-  border: 1px solid var(--line);
+  border: 1px solid var(--field-line);
   border-radius: 999px;
-  background: var(--surface);
+  background: var(--field);
 
   button {
     width: 40px;

@@ -135,12 +135,13 @@ generate();
     flex: 1 1 200px;
     min-height: 44px;
     padding-left: 14px;
-    border: 1px solid var(--line);
+    border: 1px solid var(--field-line);
     border-radius: 999px;
-    background: var(--surface);
+    background: var(--field);
 
     &:focus-within {
       border-color: var(--accent);
+      box-shadow: 0 0 0 2px var(--accent);
     }
   }
 

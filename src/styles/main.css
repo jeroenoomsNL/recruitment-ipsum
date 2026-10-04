@@ -12,6 +12,9 @@
   --badge: #e62e62;
   --marker: #ffe14d;
   --marker-ink: #1c1b3a;
+  /* text fields: border at least 3:1 against the panels behind them */
+  --field: #ffffff;
+  --field-line: #8288ad;
   --shadow: 0 1px 2px rgb(28 27 58 / 0.06), 0 12px 40px -12px rgb(28 27 58 / 0.18);
 
   --font-display: "Bricolage Grotesque Variable", system-ui, sans-serif;
@@ -37,6 +40,8 @@
   --accent: #8d9bff;
   --accent-ink: #12132a;
   --badge: #ff5c8a;
+  --field: #23264a;
+  --field-line: #6a71b5;
   --shadow: 0 1px 2px rgb(0 0 0 / 0.3), 0 16px 48px -16px rgb(0 0 0 / 0.6);
 }
 
@@ -90,6 +95,11 @@ button,
 input {
   font: inherit;
   color: inherit;
+}
+
+::placeholder {
+  color: var(--muted);
+  opacity: 1;
 }
 
 :focus-visible {
