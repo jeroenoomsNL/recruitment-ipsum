@@ -67,7 +67,7 @@ const { copy, copied, failed } = useClipboard();
         @click="copy(props.plainText)"
       >
         <AppIcon :name="copied ? 'check' : 'copy'" />
-        {{ copied ? "Copied" : failed ? "Copy failed, select the text instead" : "Copy text" }}
+        {{ copied ? "Copied" : failed ? "Copy failed. Select the text instead." : "Copy text" }}
       </button>
       <button
         type="button"
