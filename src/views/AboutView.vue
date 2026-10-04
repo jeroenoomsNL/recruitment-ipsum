@@ -62,6 +62,9 @@ const totals = [
           if you are, feel free to contact me. Just know that your message
           might end up in here. ;-)
         </p>
+        <p class="signature">
+          Jeroen
+        </p>
       </div>
 
       <aside
@@ -115,6 +118,14 @@ const totals = [
 .story {
   max-width: 64ch;
   font-size: 1.125rem;
+}
+
+.signature {
+  margin-top: 1.5em;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: -0.02em;
 }
 
 blockquote {
