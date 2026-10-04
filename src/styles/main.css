@@ -190,7 +190,7 @@ mark {
 }
 
 .page-intro {
-  padding-block: clamp(32px, 7vw, 88px) clamp(28px, 5vw, 56px);
+  padding-block: clamp(16px, 3vw, 40px) clamp(28px, 5vw, 56px);
 
   h1 {
     font-size: clamp(2.5rem, 6.5vw, 4.75rem);
