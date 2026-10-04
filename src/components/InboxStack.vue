@@ -1,16 +1,22 @@
 <script setup>
 import content from "@/lib/content";
+import { greeting, greetingName, GREETING_STYLES } from "@/lib/generator";
+import { pick, shuffle } from "@/lib/random";
 
-// Decorative inbox: real openers, "sent" by real placeholder names that
-// recruiters forgot to fill in.
+// Decorative inbox: real openers, addressed the way recruiters really do it.
+// Sometimes by name, sometimes not at all, sometimes with the placeholder
+// still in, sometimes to someone else entirely.
+const corpus = content.en;
 const times = ["09:41", "08:12", "Yesterday", "Mon", "Sun"];
-const rows = content.en.openers.slice(0, times.length).map((preview, index) => ({
-  sender: content.en.placeholderNames[index],
-  preview,
-  time: times[index],
+const styles = shuffle([...GREETING_STYLES, "name"]);
+const openers = shuffle(corpus.openers);
+
+const rows = times.map((time, index) => ({
+  sender: pick(corpus.names),
+  preview: `${greeting(corpus, greetingName(corpus, styles[index], "Jeroen"))} ${openers[index]}`,
+  time,
 }));
 </script>
-
 <template>
   <ul
     class="inbox"
@@ -82,9 +88,8 @@ li {
 }
 
 .sender {
-  font-family: var(--font-mono);
-  font-weight: 500;
-  font-size: 0.875rem;
+  font-weight: 700;
+  font-size: 0.9375rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

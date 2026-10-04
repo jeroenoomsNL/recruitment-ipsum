@@ -4,6 +4,8 @@ import {
   clampAmount,
   generateIpsum,
   generateMail,
+  greeting,
+  greetingName,
   ipsumToText,
   mailToText,
 } from "./generator";
@@ -77,5 +79,46 @@ describe("plain text output", () => {
       signature: "Bob",
     });
     expect(text).toBe("Hi Ada,\n\nJoin us.\n\nCheers,\nBob");
+  });
+});
+
+describe("greetings", () => {
+  const corpus = content.en;
+
+  it("can address someone by name, or skip the name", () => {
+    expect(greeting(corpus, "Ada")).toMatch(/^\S+( \S+)? Ada,$/);
+    expect(greeting(corpus, null)).toMatch(/^[^,]+,$/);
+    expect(corpus.salutations).toContain(greeting(corpus, null).slice(0, -1));
+  });
+
+  it("supports every greeting style", () => {
+    expect(greetingName(corpus, "name", "Ada")).toBe("Ada");
+    expect(greetingName(corpus, "none", "Ada")).toBeNull();
+    expect(corpus.placeholderNames).toContain(
+      greetingName(corpus, "placeholder", "Ada"),
+    );
+    expect(corpus.names).toContain(greetingName(corpus, "wrongName", "Ada"));
+  });
+
+  it("mixes greetings when no name is given", () => {
+    const salutations = Array.from(
+      { length: 300 },
+      () => generateMail(corpus).salutation,
+    );
+    const plain = salutations.filter((s) => !s.includes(" ") || corpus.salutations.includes(s.slice(0, -1)));
+    const placeholder = salutations.filter((s) =>
+      corpus.placeholderNames.some((name) => s.endsWith(` ${name},`)),
+    );
+    expect(plain.length).toBeGreaterThan(0);
+    expect(placeholder.length).toBeGreaterThan(0);
+    expect(plain.length + placeholder.length).toBeLessThan(300);
+  });
+
+  it("mostly uses the given name", () => {
+    const named = Array.from({ length: 300 }, () =>
+      generateMail(corpus, { to: "Ada" }).salutation,
+    ).filter((s) => s.endsWith(" Ada,"));
+    expect(named.length).toBeGreaterThan(180);
+    expect(named.length).toBeLessThan(300);
   });
 });
