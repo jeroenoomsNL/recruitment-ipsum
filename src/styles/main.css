@@ -1,5 +1,5 @@
 :root {
-  color-scheme: light dark;
+  color-scheme: light;
 
   --bg: #edeff8;
   --surface: #ffffff;
@@ -24,19 +24,20 @@
   --gutter: clamp(16px, 4vw, 40px);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #12132a;
-    --surface: #1b1d3b;
-    --surface-sunken: #161833;
-    --ink: #ecedfb;
-    --muted: #a2a6c9;
-    --line: #2d3058;
-    --accent: #8d9bff;
-    --accent-ink: #12132a;
-    --badge: #ff5c8a;
-    --shadow: 0 1px 2px rgb(0 0 0 / 0.3), 0 16px 48px -16px rgb(0 0 0 / 0.6);
-  }
+/* Set on <html> by the inline script in index.html and by useTheme() */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --bg: #12132a;
+  --surface: #1b1d3b;
+  --surface-sunken: #161833;
+  --ink: #ecedfb;
+  --muted: #a2a6c9;
+  --line: #2d3058;
+  --accent: #8d9bff;
+  --accent-ink: #12132a;
+  --badge: #ff5c8a;
+  --shadow: 0 1px 2px rgb(0 0 0 / 0.3), 0 16px 48px -16px rgb(0 0 0 / 0.6);
 }
 
 *,

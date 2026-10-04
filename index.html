@@ -7,8 +7,23 @@
       name="description"
       content="Placeholder text made from real recruitment messages received by e-mail and LinkedIn. Typos included."
     />
-    <meta name="theme-color" content="#edeff8" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#12132a" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#edeff8" />
+    <script>
+      // Apply the theme before the first paint, see src/composables/useTheme.js
+      (function () {
+        var theme;
+        try {
+          theme = localStorage.getItem("recruitment-ipsum:theme");
+        } catch (e) {}
+        if (theme !== "light" && theme !== "dark") {
+          theme = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        }
+        document.documentElement.dataset.theme = theme;
+        document
+          .querySelector('meta[name="theme-color"]')
+          .setAttribute("content", theme === "dark" ? "#12132a" : "#edeff8");
+      })();
+    </script>
     <meta property="og:title" content="Recruitment Ipsum" />
     <meta
       property="og:description"

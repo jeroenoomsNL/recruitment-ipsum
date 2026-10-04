@@ -1,4 +1,6 @@
 <script setup>
+import ThemeToggle from "./ThemeToggle.vue";
+
 const links = [
   { name: "Home", label: "Ipsum generator" },
   { name: "MessageGenerator", label: "Message generator" },
@@ -14,16 +16,19 @@ const links = [
     >
       Recruitment <span>Ipsum</span>
     </RouterLink>
-    <nav aria-label="Main">
-      <RouterLink
-        v-for="link in links"
-        :key="link.name"
-        :to="{ name: link.name }"
-        exact-active-class="active"
-      >
-        {{ link.label }}
-      </RouterLink>
-    </nav>
+    <div class="header-end">
+      <nav aria-label="Main">
+        <RouterLink
+          v-for="link in links"
+          :key="link.name"
+          :to="{ name: link.name }"
+          exact-active-class="active"
+        >
+          {{ link.label }}
+        </RouterLink>
+      </nav>
+      <ThemeToggle />
+    </div>
   </header>
 </template>
 
@@ -46,6 +51,28 @@ const links = [
 
   span {
     color: var(--accent);
+  }
+}
+
+.header-end {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Small screens: toggle next to the logo, navigation on its own row */
+@media (max-width: 640px) {
+  .header-end {
+    display: contents;
+  }
+
+  .theme-toggle {
+    order: 1;
+  }
+
+  nav {
+    order: 2;
+    flex-basis: 100%;
   }
 }
 
