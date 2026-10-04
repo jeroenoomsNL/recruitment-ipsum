@@ -36,8 +36,9 @@ import AppIcon from "./AppIcon.vue";
   font-size: 0.9375rem;
 
   p {
+    flex: 1 1 auto;
     margin: 0;
-    max-width: 52ch;
+    text-wrap: pretty;
   }
 }
 </style>
