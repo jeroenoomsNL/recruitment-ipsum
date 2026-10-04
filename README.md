@@ -1,11 +1,21 @@
 # Recruitment Ipsum
 
-> Recruitment Ipsum is a Lorem Ipsum like generator based on real recruitment messages that I've received in my e-mail or on Linkedin. Check it out at [https://jeroenoomsnl.github.io/recruitment-ipsum/](https://jeroenoomsnl.github.io/recruitment-ipsum/).
+> It's like Lorem Ipsum, but ghostwritten by recruiters. Try it at [jeroenoomsnl.github.io/recruitment-ipsum](https://jeroenoomsnl.github.io/recruitment-ipsum/).
 
-The Recruitment Ipsum text is based on all the recruitment e-mails I've in the last 10 years. I didn't change the text at all. I only removed names of companies and recruiters and left the typo's for extra entertainment. The Recruitment Ipsum tool will randomize the sentences.
+Recruitment Ipsum is a placeholder text generator built from real recruitment messages I've received by e-mail and LinkedIn over more than ten years. I didn't change the text at all: I only removed names of companies and recruiters, and left the typos for extra entertainment. The generator shuffles the sentences.
 
-The project is build with [Vue.js](http://vuejs.org)
+- **Ipsum generator** – paragraphs or lists, in English or Dutch
+- **Message generator** – a complete recruitment message with your own names
+- **Highlight buzzwords** – mark every "opportunity", "your profile" and "coffee"
+- **Copy text** – plain text, ready to paste
 
-## Contribute
+Built with [Vue 3](https://vuejs.org) and [Vite](https://vite.dev).
 
-Please see the [CONTRIBUTING.md](docs/CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](docs/CODE_OF_CONDUCT.md).
+## Development
+
+```bash
+npm install
+npm run dev
+```
+
+See [CONTRIBUTING.md](docs/CONTRIBUTING.md) for all scripts, how to add messages, and the [CODE_OF_CONDUCT.md](docs/CODE_OF_CONDUCT.md).
