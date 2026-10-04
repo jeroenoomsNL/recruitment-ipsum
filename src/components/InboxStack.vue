@@ -1,7 +1,7 @@
 <script setup>
 import content from "@/lib/content";
 import { greeting, greetingName, GREETING_STYLES } from "@/lib/generator";
-import { pick, shuffle } from "@/lib/random";
+import { shuffle } from "@/lib/random";
 
 // Decorative inbox: real openers, addressed the way recruiters really do it.
 // Sometimes by name, sometimes not at all, sometimes with the placeholder
@@ -11,8 +11,15 @@ const times = ["09:41", "08:12", "Yesterday", "Mon", "Sun"];
 const styles = shuffle([...GREETING_STYLES, "name"]);
 const openers = shuffle(corpus.openers);
 
+// Made-up agencies, so not in content.json, which only holds real messages
+const agencies = ["Your Favorite Recruiter", "Grass Is Greener Talent"];
+const senders = shuffle([
+  ...agencies,
+  ...shuffle(corpus.names).slice(0, times.length - agencies.length),
+]);
+
 const rows = times.map((time, index) => ({
-  sender: pick(corpus.names),
+  sender: senders[index],
   preview: `${greeting(corpus, greetingName(corpus, styles[index], "Jeroen"))} ${openers[index]}`,
   time,
 }));
