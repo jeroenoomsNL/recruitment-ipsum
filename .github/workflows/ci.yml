@@ -31,6 +31,29 @@ jobs:
         with:
           path: dist
 
+  # Merge Dependabot minor/patch PRs once the build passes. Majors stay open
+  # for manual review. A merge made with GITHUB_TOKEN does not trigger the push
+  # workflow, so dispatch CI on master to deploy.
+  dependabot-merge:
+    needs: build
+    if: github.event_name == 'pull_request' && github.event.pull_request.user.login == 'dependabot[bot]'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      actions: write
+    steps:
+      - id: meta
+        uses: dependabot/fetch-metadata@v2
+      - if: steps.meta.outputs.update-type != 'version-update:semver-major'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          PR_URL: ${{ github.event.pull_request.html_url }}
+        run: |
+          gh pr merge "$PR_URL" --squash
+          gh workflow run ci.yml --ref master
+
   deploy:
     needs: build
     if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
