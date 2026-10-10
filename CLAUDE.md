@@ -13,6 +13,13 @@
 - PRs get no deploy preview. Check changes locally with `npm run dev` (or `npm run build && npm run preview`).
 - Production `base` is `/recruitment-ipsum/` (see `vite.config.js`).
 
+## Dependency updates
+
+- Dependabot (`.github/dependabot.yml`) opens weekly PRs: minor/patch grouped, security updates in their own group, majors as separate PRs. New releases wait 3 days (14 for majors).
+- The `dependabot-merge` job in `ci.yml` squash merges minor/patch Dependabot PRs after `build` passes, then dispatches CI on `master` to deploy (a `GITHUB_TOKEN` merge does not trigger the push workflow). Major PRs stay open for review at the ready gate.
+- Dependabot PRs are not the active PR. Leave them alone unless CI fails or asked.
+- Merge or rebase `master` into the active branch before marking it ready, since Dependabot merges can cause lockfile conflicts.
+
 ## Branching and PRs
 
 - Trunk is `master`. Short-lived branches named `type/short-description` (e.g. `fix/footer-wrap`).
